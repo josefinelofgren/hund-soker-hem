@@ -1,4 +1,5 @@
 @use './styles/colors.scss';
+@use './styles/fonts.scss';
 
 body {
   margin: 0;
@@ -14,10 +15,39 @@ code {
     monospace;
 }
 
+// text
 h1 {
-  font-size: 50px;
-  color: colors.$primary;
+  font-size: 4rem;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-weight: fonts.$bold;
+}
+
+h6, p {
+  font-size: 1rem;
+}
+
+// navbar 
+.navbar {
+  height: 60px;
+}
+
+
+// footer 
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: colors.$bg-tertiary;
+  color: colors.$almostWhite;
+}
 
 
