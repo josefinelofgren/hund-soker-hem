@@ -1,0 +1,145 @@
+// navbar 
+.navbar {
+  height: 100px;
+  background-color: #fff;
+
+  li {
+    font-size: fonts.$navbar-link;
+    font-weight: fonts.$bold;
+    margin-right: 40px;
+    display: inline-block;
+  }
+}
+
+.sidebar-btn {
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+  transition: 850ms;
+  z-index: 10;
+  display: inline-block;
+  position: relative;
+  margin-left: 40px;
+  top: 20px;
+}
+  
+.sidebar-burger {
+  width: 30px;
+  height: 4px;
+  background-color: colors.$darkGreen;
+  border-radius: 5px;
+  transition: all .1s ease-in-out;
+  position: relative;
+  top: 20px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: colors.$darkGreen;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    z-index: 99999;
+  }
+
+  &::before{
+    transform: translateY(-7.5px);
+  }
+
+  &::after{
+    transform: translateY(7.5px);
+  }
+}
+    
+// transform burger into close icon  
+.sidebar-btn.is-active .sidebar-burger {
+  background: transparent;
+}
+    
+.sidebar-btn.is-active .sidebar-burger::before {
+  transform: rotate(-135deg);
+  background: #fff;
+}
+    
+.sidebar-btn.is-active .sidebar-burger::after {
+  transform: rotate(135deg);
+  background: #fff;
+}
+
+// sidebar
+.sidebar {
+  height: 100%;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  padding: 0 50px;
+
+  &.open {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s 0.3s;
+    transition: opacity 0.3s 0.3s;
+  }
+
+  a {
+    color: colors.$almostWhite;
+    text-decoration: none;
+  }
+
+  ul {
+    font-weight: fonts.$normal;
+    padding: 0;
+  }
+
+  .links {
+    li {
+      margin: 20px 0;
+      font-size: fonts.$sidebar-link;
+      display: block;
+    }
+  }
+
+  .sublinks {
+    li {
+      font-size: fonts.$sidebar-sublink;
+      margin: 5px 0;
+      padding: 0;
+      display: block;
+    }
+  }
+
+  .social-icons {
+    figure {
+      display: inline-block;
+      margin-right: 10px;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
+
+.sidebar-wrap {
+  position: fixed;
+  z-index: 9;
+  background-color: colors.$bg-tertiary;
+  opacity: 0;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  width: 0;
+  height: 100vh;
+  font-size: 1.5em;
+  top: 0px;
+  right: 0px;
+
+  &.open {
+    width: 400px;
+    height: 100vh;
+    opacity: 1;
+    -webkit-animation: anim-jelly 0.8s linear forwards;
+    animation: anim-jelly 0.8s linear forwards;
+    box-shadow:0 0 0 10000px rgba(255, 255, 255, 0.3);
+  }
+}

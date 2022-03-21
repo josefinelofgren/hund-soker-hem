@@ -1,16 +1,15 @@
 // import libaries 
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 //import components
 import { Container, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Button from '../buttons/Button';
 
 function Nav({ sidebar, setSidebar }) {
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-  });
-
+  const { t } = useTranslation('translation', {keyPrefix: 'navbar'});
 
   return (
     <Navbar>
@@ -18,12 +17,21 @@ function Nav({ sidebar, setSidebar }) {
         <Navbar.Brand>
             Paw Patrol
         </Navbar.Brand>
-        <Link
+        <div className='links'>
+          <li>
+            Hundarna
+          </li>
+          <li>
+            Verksamheten
+          </li>
+          <Button label={t('btn')} color='secondary'/> 
+          <Link
             to='#'
             className={sidebar ? `sidebar-btn is-active` : `sidebar-btn`}
             onClick={() => setSidebar(!sidebar)}>
             <div className={sidebar ? `sidebar-burger is-active`: `sidebar-burger`} />
         </Link>
+        </div>        
       </Container>
     </Navbar>
   );

@@ -1,6 +1,8 @@
 @use './styles/colors.scss';
+@use './styles/fonts.scss';
 @import './styles/fonts.scss';
 @import './styles/buttons.scss';
+@import './styles/navigation.scss';
 
 body {
   margin: 0;
@@ -40,9 +42,8 @@ img {
   margin: 0 !important;
 }
 
-// navbar 
-.navbar {
-  height: 60px;
+li {
+  cursor: pointer;
 }
 
 // intro

@@ -9,6 +9,7 @@ import Aos from 'aos';
 
 //import components
 import Nav from './components/navigation/Navbar';
+import Sidebar from './components/navigation/Sidebar';
 import Footer from './components/footer/Footer';
 import LandingPage from './pages/home/LandingPage';
 
@@ -33,6 +34,10 @@ function App() {
         sidebar={sidebar}
         setSidebar={setSidebar}
       />
+      <Sidebar 
+        sidebar={sidebar}
+        setSidebar={setSidebar}
+      /> 
       <div className='content-wrap'>
             <Routes>
                 <Route 

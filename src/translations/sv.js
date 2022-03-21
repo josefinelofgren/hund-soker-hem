@@ -5,6 +5,9 @@ const translation = {
         'subtitle': 'Låt oss sköta matchningen. Svara på några frågor så parar vi ihop dig med dem hundar som matchar dig och din livstil- och situation.',
         'btn': 'Hitta min match',
     },
+    'navbar': {
+        'btn': 'Stöd oss',
+    },
     'landing-page': {
         'sponsors-title': 'Sponsorer',
 
