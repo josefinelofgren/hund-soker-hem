@@ -2,7 +2,7 @@ const translation = {
 
     'header': {
         'title': 'Möt din match',
-        'subtitle': 'Låt oss sköta matchningen. Svara på några frågor så parar vi ihop dig med dem hundar som matchar dig och din livstil- och situation.',
+        'text': 'Låt oss sköta matchningen. Svara på några frågor så parar vi ihop dig med dem hundar som matchar dig och din livstil- och situation.',
         'btn': 'Hitta min match',
     },
     'navbar': {

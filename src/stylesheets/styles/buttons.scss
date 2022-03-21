@@ -16,10 +16,23 @@ button {
   &.secondary {
     background-color: colors.$btn-darkGreen;
   }
-    
+
   &.tertiary {
     background-color: colors.$btn-green;
   }
+    
+  &.sm {
+
+
+    figure {
+      width: 30px;
+    }
+
+    label {
+      font-size: fonts.$btn-small;
+    }
+  }
+  
 
   .content {
     display: flex;
@@ -30,6 +43,7 @@ button {
   figure {
     width: 40px;
     margin: 0;
+    position: relative !important;
   }
 
   label {

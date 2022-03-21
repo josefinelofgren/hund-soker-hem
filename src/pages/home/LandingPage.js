@@ -6,14 +6,15 @@ import { useTranslation } from 'react-i18next';
 import { Container, Row, Col } from 'react-bootstrap';
 import Sponsors from '../../components/sponsors/Sponsors';
 import Button from '../../components/buttons/Button';
+import Header from '../../components/header/Header';
 
 function LandingPage() {
 
   const { t } = useTranslation('translation', {keyPrefix: 'landing-page'});
 
-
   return (
     <>
+    <Header /> 
     <div className='intro'>
         <Container fluid>
           <Row>
@@ -53,7 +54,7 @@ function LandingPage() {
                     <p>{t('adoption-process-step-three-text')}</p>
                   </div>
                 </div>
-                <Button label={t('adoption-process-btn')} size='small' color='tertiary' /> 
+                <Button label={t('adoption-process-btn')} size='md' color='tertiary' /> 
               </Col>
             </Row>
         </Container>
@@ -76,7 +77,7 @@ function LandingPage() {
             <Col md='6'>
               <h3>{t('support-us-title')}</h3>
               <p>{t('support-us-text')}</p>
-              <Button label={t('support-us-btn')} size='small' color='secondary' /> 
+              <Button label={t('support-us-btn')} size='md' color='secondary' /> 
             </Col>
           </Row>
         </Container>

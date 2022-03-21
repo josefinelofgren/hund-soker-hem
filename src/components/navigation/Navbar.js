@@ -18,13 +18,15 @@ function Nav({ sidebar, setSidebar }) {
             Paw Patrol
         </Navbar.Brand>
         <div className='links'>
-          <li>
-            Hundarna
-          </li>
-          <li>
-            Verksamheten
-          </li>
-          <Button label={t('btn')} color='secondary'/> 
+          <div className='extra-links'>
+            <li>
+              Hundarna 
+            </li>
+            <li>
+              Vår verksamhet
+            </li>
+            <Button label={t('btn')} color='tertiary' size='sm'/> 
+          </div>
           <Link
             to='#'
             className={sidebar ? `sidebar-btn is-active` : `sidebar-btn`}
