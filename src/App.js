@@ -8,7 +8,6 @@ import {
 import Aos from 'aos';
 
 //import components
-import { Container } from 'react-bootstrap';
 import Nav from './components/navigation/Navbar';
 import Footer from './components/footer/Footer';
 import LandingPage from './pages/home/LandingPage';
@@ -34,12 +33,14 @@ function App() {
         sidebar={sidebar}
         setSidebar={setSidebar}
       />
+      <div className='content-wrap'>
             <Routes>
                 <Route 
                     exact path='/'
                     element={<LandingPage />}>
                 </Route>
             </Routes>
+      </div>
       <Footer /> 
      </Router>
 </div>

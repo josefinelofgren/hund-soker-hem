@@ -1,0 +1,59 @@
+@use './colors.scss';
+@use './fonts.scss';
+
+button {
+  border-radius: 50px;
+  border: none;
+  padding: 10px 20px;
+  min-width: 200px;
+  color: colors.$almostWhite;
+  font-weight: fonts.$bold;
+  cursor: pointer;
+
+  &.primary {
+    background-color: colors.$btn-pink;
+  }
+    
+  &.secondary {
+    background-color: colors.$btn-darkGreen;
+  }
+    
+  &.tertiary {
+    background-color: colors.$btn-green;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  figure {
+    width: 40px;
+    margin: 0;
+  }
+
+  label {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: fonts.$btn;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+}
+
+button:hover {
+  &.primary {
+    background-color: colors.$btn-pink-hover;
+  }
+    
+  &.secondary {
+    background-color: colors.$btn-darkGreen-hover;
+  }
+    
+  &.tertiary {
+    background-color: colors.$btn-green-hover;
+  }
+}
+
+

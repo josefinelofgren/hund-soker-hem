@@ -1,5 +1,6 @@
 @use './styles/colors.scss';
-@use './styles/fonts.scss';
+@import './styles/fonts.scss';
+@import './styles/buttons.scss';
 
 body {
   margin: 0;
@@ -8,6 +9,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding: 40px !important;
+}
+
+.content-wrap {
+  padding-bottom: 300px;
 }
 
 code {
@@ -15,30 +32,46 @@ code {
     monospace;
 }
 
-// text
-h1 {
-  font-size: 4rem;
-}
 
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h6 {
-  font-weight: fonts.$bold;
-}
-
-h6, p {
-  font-size: 1rem;
+img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 !important;
 }
 
 // navbar 
 .navbar {
   height: 60px;
+}
+
+// intro
+.intro {
+  background-color: colors.$bg-pink;
+}
+
+// homeless dogs 
+.homeless-dogs {
+  background-color: colors.$bg-secondary;
+}
+
+// sponsors 
+.sponsors {
+  background-color: colors.$bg-secondary;
+
+  h3 {
+    text-align: center;
+  }
+
+  figure {
+    text-align: center;
+    padding: 20px;
+
+    img {
+      max-width: 100px;
+    } 
+  }
+
 }
 
 
@@ -48,6 +81,7 @@ h6, p {
   bottom: 0;
   background-color: colors.$bg-tertiary;
   color: colors.$almostWhite;
+  min-height: 300px;
 }
 
 
