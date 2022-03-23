@@ -8,20 +8,24 @@ const translation = {
     'navbar': {
         'btn': 'Stöd oss',
     },
+    'adoption-process': {
+        'adoption-process-title': 'Hur går en adoption till?',
+        'adoption-process-step-one-number': '1.',
+        'adoption-process-step-one-title': 'Vi matchar ihop er',
+        'adoption-process-step-one-text': 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus.',
+        'adoption-process-step-two-number': '2.',
+        'adoption-process-step-two-title': 'Boka in ett första möte',
+        'adoption-process-step-two-text': 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus.',
+        'adoption-process-step-three-number': '3.',
+        'adoption-process-step-three-title': 'Livslång vägledning',
+        'adoption-process-step-three-text': 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus.',
+        'adoption-process-btn': 'Hitta min match',
+    },
     'landing-page': {
         'sponsors-title': 'Sponsorer',
 
         'intro-title': 'Alla hundar förtjänar en andra chans',
         'intro-text': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.',
-
-        'adoption-process-title': 'Hur går en adoption till?',
-        'adoption-process-step-one-title': 'Vi matchar ihop er',
-        'adoption-process-step-one-text': 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus.',
-        'adoption-process-step-two-title': 'Boka in ett första möte',
-        'adoption-process-step-two-text': 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus.',
-        'adoption-process-step-three-title': 'Livslång vägledning efter adoptionen',
-        'adoption-process-step-three-text': 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus.',
-        'adoption-process-btn': 'Hitta min match',
         
         'homeless-dogs-title': 'Hemösa hundar i Italien',
         'homeless-dogs-text': 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.',
@@ -56,6 +60,9 @@ const translation = {
         'donate-swish': '123 161 62 26',
 
         'social-media-title': 'Följ oss',
+
+        'copyright-name': 'Ansvarig utgivare: Josefine Löfgren',
+        'copyright-company': '© 2022 Paw Patrol'
     },
 };
 

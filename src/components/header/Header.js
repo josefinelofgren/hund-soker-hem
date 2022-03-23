@@ -7,7 +7,7 @@ import Button from '../buttons/Button';
 import { Container, Row } from 'react-bootstrap';
 
 
-function Header({ label, size, color }) {
+function Header() {
 
   const { t } = useTranslation('translation', {keyPrefix: 'header'});
 

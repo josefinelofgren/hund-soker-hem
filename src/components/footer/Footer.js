@@ -4,6 +4,9 @@ import React, { useLayoutEffect } from 'react';
 //import components
 import { Container, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import facebook from '../../assets/svg/facebook-icon.svg';
+import instagram from '../../assets/svg/instagram-icon.svg';
+
 
 function Footer() {
 
@@ -18,12 +21,12 @@ function Footer() {
     <div className='footer'>
         <Container fluid>
             <Row>
-                <Col sm='3'>
-                  <h4>{t('company-title')}</h4>
+                <Col md='3'>
+                  <h5>{t('company-title')}</h5>
                   <p>{t('company-description')}</p>
                 </Col>
-                <Col sm='3'>
-                  <h4>{t('contact-title')}</h4>
+                <Col md='3'>
+                  <h5>{t('contact-title')}</h5>
                   <p>
                     {t('contact-company')}
                     <br />
@@ -34,8 +37,8 @@ function Footer() {
                     {t('contact-zipcode')}
                   </p>
                 </Col>
-                <Col sm='3'>
-                  <h4>{t('donate-title')}</h4>
+                <Col md='3'>
+                  <h5>{t('donate-title')}</h5>
                   <h6>{t('donate-subtitle')}</h6>
                   <p>
                     {t('donate-bankgiro')}
@@ -43,9 +46,26 @@ function Footer() {
                     {t('donate-swish')}
                   </p>
                 </Col>
-                <Col sm='3'>
-                  <h4>{t('social-media-title')}</h4>
+                <Col md='3'>
+                  <h5>{t('social-media-title')}</h5>
+                  <div className='social-icons'>
+                    <figure>
+                      <img src={instagram} alt='Instagram Icon' /> 
+                    </figure>
+                    <figure>
+                      <img src={facebook} alt='Facebook Icon' /> 
+                    </figure>
+                  </div>
                 </Col>
+            </Row>
+            <Row>
+              <div className='copyright'>
+                <p>
+                  {t('copyright-name')}
+                  <br />
+                  {t('copyright-company')}
+                </p>
+              </div>
             </Row>
         </Container> 
     </div>

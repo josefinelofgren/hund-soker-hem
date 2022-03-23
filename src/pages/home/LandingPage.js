@@ -7,6 +7,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Sponsors from '../../components/sponsors/Sponsors';
 import Button from '../../components/buttons/Button';
 import Header from '../../components/header/Header';
+import AdoptionProcess from '../../components/adoption-process/AdoptionProcess';
 
 function LandingPage() {
 
@@ -30,33 +31,7 @@ function LandingPage() {
     </div>
     <div className='adoption-process'>
         <Container fluid>
-            <Row>
-              <Col md='6'>
-                <img src={require('../../assets/images/match-img.png')} alt='Dog' /> 
-              </Col>
-              <Col md='6'>
-                <h3>{t('adoption-process-title')}</h3>
-                <div className='adoption-process-step one'>
-                  <h4>{t('adoption-process-step-one-title')}</h4>
-                  <div className='adoption-process-step-text one'>
-                    <p>{t('adoption-process-step-one-text')}</p>
-                  </div>
-                </div>
-                <div className='adoption-process-step two'>
-                  <h4>{t('adoption-process-step-two-title')}</h4>
-                  <div className='adoption-process-step-text two'>
-                    <p>{t('adoption-process-step-two-text')}</p>
-                  </div>
-                </div>
-                <div className='adoption-process-step three'>
-                  <h4>{t('adoption-process-step-three-title')}</h4>
-                  <div className='adoption-process-step-text three'>
-                    <p>{t('adoption-process-step-three-text')}</p>
-                  </div>
-                </div>
-                <Button label={t('adoption-process-btn')} size='md' color='tertiary' /> 
-              </Col>
-            </Row>
+            <AdoptionProcess />
         </Container>
     </div>
     <div className='homeless-dogs'>

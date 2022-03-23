@@ -1,10 +1,10 @@
 @use './styles/colors.scss';
 @use './styles/fonts.scss';
+@use './styles/spaces.scss';
 @import './styles/fonts.scss';
 @import './styles/buttons.scss';
 @import './styles/navigation.scss';
 
-$wrap-padding: 10%;
 
 body {
   margin: 0;
@@ -24,18 +24,17 @@ body {
 }
 
 .container-fluid {
-  padding: $wrap-padding !important;
+  padding: spaces.$wrap-padding !important;
 }
 
 .content-wrap {
-  padding-bottom: 300px;
+  padding-bottom: 400px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 
 img {
   position: relative;
@@ -46,6 +45,17 @@ img {
 
 li {
   cursor: pointer;
+}
+
+.social-icons {
+  figure {
+    display: inline-block;
+    margin-right: 10px;
+
+    img {
+      width: 70%;
+    }
+  }
 }
 
 //header
@@ -63,14 +73,114 @@ li {
     width: 65%;
     max-width: 750px;
     min-width: 400px;
-    right: $wrap-padding;
-    bottom: $wrap-padding;
+    right: spaces.$wrap-padding;
+    bottom: spaces.$wrap-padding;
   }
 }
 
 // intro
 .intro {
   background-color: colors.$bg-pink;
+}
+
+// adoption process
+.adoption-process {
+  position: relative;
+
+  @media screen and (max-width: 992px) {
+    .img-col {
+      display: none;
+    }
+  }
+
+  .adoption-process-content {
+    margin: spaces.$md 0px;
+  }
+
+  .border {
+    border-color: colors.$darkGreen !important; 
+    margin-bottom: spaces.$extraSm;
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  .row {
+    position: relative;
+
+    .drop img {
+      top: 8px;
+    }
+  }
+
+    .drop img {
+      width: 70px;
+      z-index: -10;
+      position: absolute;
+      display: none;
+
+      &.is-active {
+        display: block;
+      }
+    }
+
+    .adoption-process-step {
+      max-width: 500px;
+      cursor: pointer;
+
+      &.one:hover h3, h4 {
+        color: colors.$darkGreen-hover;
+      }
+
+      &.one:hover h3.is-active, &.two:hover h3.is-active, &.three:hover h3.is-active {
+        color: colors.$almostWhite;
+      }
+
+      &.one:hover h3, &.one:hover h4,  
+      &.two:hover h3, &.two:hover h4, 
+      &.three:hover h3, &.three:hover h4
+      {
+        color: colors.$darkGreen-hover;
+      }
+
+
+
+      h3 {
+        margin-right: spaces.$md;
+        color: colors.$darkGreen-opacity;
+
+        &.is-active {
+          color: colors.$almostWhite;
+        }
+      }
+
+      h4 {
+        color: colors.$darkGreen-opacity;
+        font-weight: fonts.$bold;
+    
+        &.is-active {
+          color: colors.$darkGreen !important;
+        }
+      }
+  
+      h3, .title {
+        position: relative;
+        left: spaces.$md;
+        display: inline-block;
+      }
+
+      p {
+        position: relative;
+        left: 82px;
+        display: none;
+
+        &.is-active {
+          display: block;
+        }
+      }
+    }
 }
 
 // homeless dogs 
@@ -104,6 +214,22 @@ li {
   background-color: colors.$bg-tertiary;
   color: colors.$almostWhite;
   min-height: 300px;
+  
+  h5 {
+    font-weight: fonts.$bold;
+    margin-bottom: spaces.$sm;
+  }
+
+  p {
+    font-size: fonts.$sm;
+  }
+
+  .copyright {
+    p {
+      color: colors.$almostWhite-opacity;
+      text-align: center;
+      position: relative;
+      width: 100%;
+    }
+  }
 }
-
-
