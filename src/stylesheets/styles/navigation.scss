@@ -10,6 +10,12 @@
     display: inline-block;
     color: colors.$darkGreen;
 
+    figure {
+      width: 10px;
+      display: inline-block;
+      margin-left: 8px;
+    }
+
     &:hover {
       color: colors.$darkGreen-hover;
     }
@@ -113,6 +119,12 @@
       margin: 20px 0;
       font-size: fonts.$sidebar-link;
       display: block;
+      transition: all .1s ease-in-out;
+
+      &:hover {
+        transition: all .1s ease-in-out;
+        font-weight: fonts.$bold;
+      }
     }
   }
 
@@ -122,6 +134,12 @@
       margin: 5px 0;
       padding: 0;
       display: block;
+      transition: all .1s ease-in-out;
+
+      &:hover {
+        transition: all .1s ease-in-out;
+        font-weight: fonts.$bold;
+      }
     }
   }
 }

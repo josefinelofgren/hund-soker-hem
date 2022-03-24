@@ -4,11 +4,12 @@
 @import './styles/fonts.scss';
 @import './styles/buttons.scss';
 @import './styles/navigation.scss';
+@import './styles/forms.scss';
 
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins', sans-serif, 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -63,6 +64,10 @@ li {
   height: 600px;
   position: relative;
 
+  h1 {
+    color: colors.$darkGreen-hover;
+  }
+
   .content {
     max-width: 500px;
     z-index: 2;
@@ -116,10 +121,11 @@ li {
   }
 
     .drop img {
-      width: 70px;
+      width: 60px;
       z-index: -10;
       position: absolute;
       display: none;
+      left: 20px;
 
       &.is-active {
         display: block;
@@ -131,6 +137,7 @@ li {
       cursor: pointer;
 
       &.one:hover h3, h4 {
+        transition: all .1s ease-in-out;
         color: colors.$darkGreen-hover;
       }
 
@@ -142,14 +149,14 @@ li {
       &.two:hover h3, &.two:hover h4, 
       &.three:hover h3, &.three:hover h4
       {
+        transition: all .1s ease-in-out;
         color: colors.$darkGreen-hover;
       }
-
-
 
       h3 {
         margin-right: spaces.$md;
         color: colors.$darkGreen-opacity;
+        transition: all .2s ease-in-out;
 
         &.is-active {
           color: colors.$almostWhite;
@@ -158,7 +165,8 @@ li {
 
       h4 {
         color: colors.$darkGreen-opacity;
-        font-weight: fonts.$bold;
+        font-weight: fonts.$bold; 
+        transition: all .2s ease-in-out;
     
         &.is-active {
           color: colors.$darkGreen !important;
@@ -173,7 +181,7 @@ li {
 
       p {
         position: relative;
-        left: 82px;
+        margin-left: 82px;
         display: none;
 
         &.is-active {
@@ -186,6 +194,54 @@ li {
 // homeless dogs 
 .homeless-dogs {
   background-color: colors.$bg-secondary;
+
+  img {
+    width: 90%;
+  }
+
+  button {
+    margin-bottom: spaces.$extraLg;
+  }
+
+  .first-row {
+    margin-bottom: spaces.$extraLg;
+  }
+
+  h3 {
+    margin-bottom: spaces.$sm;
+  }
+
+  p {
+    margin-bottom: spaces.$md;
+  }
+}
+
+//monthly donor 
+.monthly-donor {
+  text-align: center;
+
+  h3, p.text, h6 {
+    margin-bottom: spaces.$md;
+  }
+
+  h6 {
+    color: colors.$darkGreen;
+  }
+
+  p.inline {
+    display: inline-block;
+    margin: spaces.$sm;
+  }
+
+  .input-btn, input {
+    margin: spaces.$extraSm;
+  }
+
+
+  button.primary {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 // sponsors 
@@ -232,4 +288,119 @@ li {
       width: 100%;
     }
   }
+}
+
+
+//available-dogs
+.available-dogs {
+
+  .prewords {
+    background-color: colors.$bg-secondary;
+    
+    h3 {
+      color: colors.$primary;
+    }
+
+    h5 {
+      margin-top: spaces.$lg;
+      color: colors.$pink;
+      font-weight: fonts.$bold;
+    }
+
+    p {
+      margin-bottom: spaces.$md;
+    }
+  }
+
+  .dogs {
+    .title {
+      text-align: center;
+      margin-bottom: spaces.$lg;
+      color: colors.$primary;
+    }
+  }
+
+    .dog {
+      margin-bottom: spaces.$extraLg;
+
+      h3 {
+        color: colors.$secondary;
+      }
+
+      h3, h5 {
+        color: colors.$primary;
+      }
+
+      h5 {
+        font-weight: fonts.$bold;
+      }
+
+      h5 span, h6 span {
+        font-weight: fonts.$normal;
+        font-size: fonts.$paragraph;
+        color: colors.$secondary !important;
+        margin-left: 2px;
+      }
+
+      h6 {
+        margin-bottom: spaces.$sm;
+      }
+
+      .read-more {
+        color: colors.$pink;
+      }
+    }
+}
+
+
+// selected dog
+.selected-dog {
+
+  .dog-img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%
+    }
+  }
+
+  .col-lg-6 {
+    padding: 0;
+    background-color: colors.$bg-secondary;
+  }
+
+  .border {
+    border-color: colors.$primary !important;
+    margin: spaces.$extraSm 0 spaces.$md 0;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 40px auto;
+  }
+
+  h3, h5 {
+    color: colors.$primary;
+    font-weight: fonts.$bold;
+  }
+
+
+  .grid-container-images {
+    display: grid;
+    grid-template-columns: 49% 49%;
+
+    .grid-item-image {
+      margin-right: spaces.$sm;
+    }
+  }
+
+
+
 }

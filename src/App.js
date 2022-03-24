@@ -8,10 +8,15 @@ import {
 import Aos from 'aos';
 
 //import components
-import Nav from './components/navigation/Navbar';
-import Sidebar from './components/navigation/Sidebar';
-import Footer from './components/footer/Footer';
-import LandingPage from './pages/home/LandingPage';
+import Nav from './components/navigation/navbar';
+import Sidebar from './components/navigation/sidebar';
+import Footer from './components/footer/footer';
+
+// import pages
+import LandingPage from './pages/home/landing-page';
+import FindMatch from './pages/adoption/find-match';
+import AvailableDogs from './pages/adoption/available-dogs';
+import SelectedDog from './pages/adoption/selected-dog';
 
 
 function App() {
@@ -43,6 +48,26 @@ function App() {
                 <Route 
                     exact path='/'
                     element={<LandingPage />}>
+                </Route>
+                <Route 
+                    path='/hitta-min-match'
+                    element={<FindMatch />}> 
+                </Route>
+                <Route 
+                    path='/tillgangliga-hundar'
+                    element={<AvailableDogs />}> 
+                </Route>
+                <Route 
+                    path='/tillgangliga-hundar/:name'
+                    element={<SelectedDog />}> 
+                </Route>
+                <Route 
+                    path='/om-oss'
+                    element={<LandingPage />}> 
+                </Route>
+                <Route 
+                    path='/stod-oss'
+                    element={<LandingPage />}> 
                 </Route>
             </Routes>
       </div>

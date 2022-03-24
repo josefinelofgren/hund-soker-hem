@@ -5,7 +5,8 @@ import { useTranslation } from 'react-i18next';
 //import components
 import { Container, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Button from '../buttons/Button';
+import Button from '../buttons/button';
+import arrowDown from '../../assets/svg/arrow-down.svg';
 
 function Nav({ sidebar, setSidebar }) {
 
@@ -19,12 +20,22 @@ function Nav({ sidebar, setSidebar }) {
         </Navbar.Brand>
         <div className='links'>
           <div className='extra-links'>
+            <Link to={'/tillgangliga-hundar'}>
             <li>
               Hundarna 
+              <figure>
+                <img src={arrowDown} alt='Arrow Down'/> 
+              </figure>
             </li>
+            </Link>
+            <Link to={'/om-oss'}>
             <li>
               Vår verksamhet
+              <figure>
+                <img src={arrowDown} alt='Arrow Down'/> 
+              </figure>
             </li>
+            </Link>
             <Button label={t('btn')} color='tertiary' size='sm'/> 
           </div>
           <Link
