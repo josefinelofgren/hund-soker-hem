@@ -11,14 +11,8 @@ import InputNumber from '../../components/forms/number-input';
 import Form from '../../components/forms/form';
 import Header from '../../components/header/header';
 import AdoptionProcess from '../../components/adoption-process/adoption-process';
+import { getWindowDimensions } from '../../components/window-dimensions/window-dimensions';
 
-function getWindowDimensions(){
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-      width,
-      height
-  };
-}
 
 function LandingPage() {
 

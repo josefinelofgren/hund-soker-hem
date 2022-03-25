@@ -16,11 +16,12 @@ function AdoptionProcess() {
 
   return (
     <Row>
-        <Col lg='6' className='img-col'>
+        <Col lg='5' className='img-col'>
             <figure>
                 <img src={require('../../assets/images/match-img.png')} alt='Dog' /> 
             </figure>
         </Col>
+        <Col lg='1'></Col>
         <Col lg='6'>
             <div className='content'>
             <h3>{t('adoption-process-title')}</h3>

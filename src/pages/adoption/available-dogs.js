@@ -19,7 +19,8 @@ function AvailableDogs() {
       city: 'Stockholm',
       race: 'Staffordshire Bullterrier',
       sex: 'Hane',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.',
+      img: require('../../assets/images/bruno.png'),
     },
     {
         name: 'Bruno',
@@ -28,7 +29,8 @@ function AvailableDogs() {
         city: 'Stockholm',
         race: 'Staffordshire Bullterrier',
         sex: 'Hane',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.',
+        img: require('../../assets/images/bruno.png'),
       },
       {
         name: 'Bruno',
@@ -37,7 +39,8 @@ function AvailableDogs() {
         city: 'Stockholm',
         race: 'Staffordshire Bullterrier',
         sex: 'Hane',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.',
+        img: require('../../assets/images/bruno.png'),
       },
   ]
 
@@ -51,7 +54,7 @@ function AvailableDogs() {
                 <p>{t('text-two')}</p>
                 <h5>{t('subtitle-one')}</h5>
                 <p>{t('text-one')}</p>
-                <Button label={t('find-match')} color={'tertiary'} />
+                <Button label={t('find-match')} color={'primary'} />
             </Container>
         </div>
         <div className='dogs'>

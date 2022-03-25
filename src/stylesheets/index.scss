@@ -16,6 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   min-height: 100vh;
+  white-space: pre-line;
 }
 
 *,
@@ -92,6 +93,10 @@ li {
 .adoption-process {
   position: relative;
 
+  button {
+    margin-left: spaces.$extraLg;
+  }
+
   @media screen and (max-width: 992px) {
     .img-col {
       display: none;
@@ -133,7 +138,6 @@ li {
     }
 
     .adoption-process-step {
-      max-width: 500px;
       cursor: pointer;
 
       &.one:hover h3, h4 {
@@ -303,7 +307,7 @@ li {
 
     h5 {
       margin-top: spaces.$lg;
-      color: colors.$pink;
+      color: colors.$primary;
       font-weight: fonts.$bold;
     }
 
@@ -352,45 +356,29 @@ li {
     }
 }
 
+// dog img 
+.dog-img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+  }
+}
+
 
 // selected dog
 .selected-dog {
-
-  .dog-img {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-    img {
-      flex-shrink: 0;
-      min-width: 100%;
-      min-height: 100%
-    }
-  }
-
-  .col-lg-6 {
-    padding: 0;
-    background-color: colors.$bg-secondary;
-  }
-
-  .border {
-    border-color: colors.$primary !important;
-    margin: spaces.$extraSm 0 spaces.$md 0;
-  }
-
   .grid-container {
     display: grid;
     grid-template-columns: 40px auto;
   }
-
-  h3, h5 {
-    color: colors.$primary;
-    font-weight: fonts.$bold;
-  }
-
 
   .grid-container-images {
     display: grid;
@@ -398,9 +386,55 @@ li {
 
     .grid-item-image {
       margin-right: spaces.$sm;
+      margin-bottom: spaces.$sm;
     }
   }
+}
 
 
+.about-adoption, .our-business, .selected-dog {
+  .border {
+    border-color: colors.$primary !important;
+    margin: spaces.$extraSm 0 spaces.$md 0;
+  }
+
+  .col-lg-6 {
+    background-color: colors.$bg-primary;
+    padding: 0;
+  }
+
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+
+  h3, h5, h4 {
+    color: colors.$primary;
+    font-weight: fonts.$bold;
+  }
+
+  p {
+    margin-bottom: spaces.$md;
+  }
+  
+  p span {
+    font-weight: fonts.$bold;
+    color: colors.$primary;
+  }
+
+  .pink {
+    color: colors.$pink;
+  }
+}
+
+.about-adoption {
+
+  .question span {
+    color: colors.$pink;
+  }
+
+  .question.mb {
+    margin-bottom: spaces.$sm !important;
+  }
 
 }

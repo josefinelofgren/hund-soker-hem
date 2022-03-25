@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import Button from '../../components/buttons/button';
 
-function AvailableDogs() {
+function SelectedDog() {
 
   // scroll to top when routing
   useLayoutEffect(() => {
@@ -176,15 +176,11 @@ function AvailableDogs() {
                         <Col md='6'>
                             <h5>Om {dog.name}:</h5>
                             <p>{dog.description}</p>
-                            <br /> 
                             <h5>Vi söker:</h5>
                             <p>{dog.description}</p>
-                            <br /> 
                             <h5>Kontaktperson:</h5>
                             <p>{dog.contact}</p>
-                            <br /> 
                             <Button label={`Jag vill träffa ${dog.name}`} color={'primary'} disabled={true}/> 
-
                         </Col>
                         <Col md='6'>
                             <div className='grid-container-images'>
@@ -208,4 +204,4 @@ function AvailableDogs() {
 }
 
 
-export default AvailableDogs;
+export default SelectedDog;

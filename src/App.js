@@ -17,6 +17,8 @@ import LandingPage from './pages/home/landing-page';
 import FindMatch from './pages/adoption/find-match';
 import AvailableDogs from './pages/adoption/available-dogs';
 import SelectedDog from './pages/adoption/selected-dog';
+import AboutAdoption from './pages/adoption/about-adoption';
+import OurBusiness from './pages/business/our-business';
 
 
 function App() {
@@ -62,8 +64,12 @@ function App() {
                     element={<SelectedDog />}> 
                 </Route>
                 <Route 
-                    path='/om-oss'
-                    element={<LandingPage />}> 
+                    path='/att-adoptera'
+                    element={<AboutAdoption />}> 
+                </Route>
+                <Route 
+                    path='/var-verksamhet'
+                    element={<OurBusiness />}> 
                 </Route>
                 <Route 
                     path='/stod-oss'
