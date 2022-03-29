@@ -60,6 +60,12 @@ li {
   }
 }
 
+a {
+  color: colors.$pink;
+  text-decoration: none;
+  font-weight: fonts.$bold;
+}
+
 //header
 .header {
   height: 600px;
@@ -399,7 +405,7 @@ li {
   }
 
   .col-lg-6 {
-    background-color: colors.$bg-primary;
+    background-color: colors.$bg-secondary;
     padding: 0;
   }
 

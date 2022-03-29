@@ -1,5 +1,5 @@
 // import libaries 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
@@ -7,42 +7,21 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import Button from '../../components/buttons/button';
 
+// fetch 
+const available_dogs_URI = 'http://localhost:8080/available-dogs/all-dogs';
+// const available_dogs_URI = 'https://diskrid-server.herokuapp.com/available-dogs/all-dogs';
+
+
 function AvailableDogs() {
 
   const { t } = useTranslation('translation', {keyPrefix: 'available-dogs'});
-
-  const dogs = [
-    {
-      name: 'Bruno',
-      path: 'bruno',
-      age: '1 år',
-      city: 'Stockholm',
-      race: 'Staffordshire Bullterrier',
-      sex: 'Hane',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.',
-      img: require('../../assets/images/bruno.png'),
-    },
-    {
-        name: 'Bruno',
-        path: 'bruno',
-        age: '1 år',
-        city: 'Stockholm',
-        race: 'Staffordshire Bullterrier',
-        sex: 'Hane',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.',
-        img: require('../../assets/images/bruno.png'),
-      },
-      {
-        name: 'Bruno',
-        path: 'bruno',
-        age: '1 år',
-        city: 'Stockholm',
-        race: 'Staffordshire Bullterrier',
-        sex: 'Hane',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.',
-        img: require('../../assets/images/bruno.png'),
-      },
-  ]
+  const [dogs, setDogs] = useState([]);
+  
+  useEffect(() => {
+    fetch(available_dogs_URI)
+    .then(response => response.json())
+    .then(data => setDogs(data));
+  },[])
 
   return (
     <div className='available-dogs'>
@@ -63,7 +42,7 @@ function AvailableDogs() {
                 <Row>
                     {dogs.map((dog, index) => {
                         return (
-                            <Col md='6'>
+                            <Col md='6' key={index}>
                                 <Dog 
                                   name={dog.name}
                                   race={dog.race}

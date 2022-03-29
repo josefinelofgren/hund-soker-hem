@@ -28,7 +28,9 @@ function Nav({ sidebar, setSidebar }) {
     <Navbar>
       <Container fluid>
         <Navbar.Brand>
+          <Link to={'/'}>
             Paw Patrol
+          </Link>
         </Navbar.Brand>
         <div className='links'>
         {windowDimensions.width >= 1100 && (

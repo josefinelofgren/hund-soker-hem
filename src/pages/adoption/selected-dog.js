@@ -1,11 +1,16 @@
 // import libaries 
-import React, { useLayoutEffect } from 'react';
+import React, { useLayoutEffect, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 //import components
 import { Container, Row, Col } from 'react-bootstrap';
 import Button from '../../components/buttons/button';
+
+// fetch 
+const selected_dog_URI = 'http://localhost:8080/available-dogs/selected-dog';
+// const selected_dog_URI = 'https://diskrid-server.herokuapp.com/available-dogs/selected-dog';
+
 
 function SelectedDog() {
 
@@ -16,24 +21,28 @@ function SelectedDog() {
 
   const { t } = useTranslation('translation', {keyPrefix: 'available-dogs'});
 
-  const dog = {
-      name: 'Bruno',
-      path: 'bruno',
-      age: '1 år',
-      city: 'Stockholm',
-      race: 'Staffordshire Bullterrier',
-      sex: 'Hane',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.',
-      activityLevel: 'Hög',
-      height: '50cm',
-      weight: '20kg',
-      kidsSpecification: 'Ja, barn över 12 år',
-      cats: 'Nej',
-      dogsSpecification: 'Tikar',
-      personality: 'Kärleksfull och glad',
-      img: require('../../assets/images/bruno.png'),
-      contact: 'josefine@pawpatrol.se',
-    };
+  let params = useParams();
+  let path = params.name;
+  const[selectedDog, setSelectedDog] = useState({});
+
+  let selectedDogPath = {
+      path: path,
+  }
+
+  useEffect(() => {
+    fetch(selected_dog_URI, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(selectedDogPath),
+      })
+      .then(res => res.json())
+      .then(result => {
+        setSelectedDog(result)
+        console.log(result)
+      })
+  },[])
 
   return (
     <div className='selected-dog'>
@@ -41,14 +50,14 @@ function SelectedDog() {
                 <Row>
                     <Col lg='6'>
                         <figure className='dog-img'>
-                            <img src={dog.img} alt={`Hunden ${dog.name}`} /> 
+                            <img src={selectedDog.img} alt={`Hunden ${selectedDog.name}`} /> 
                         </figure>
                     </Col>
                     <Col lg='6'>
                         <div className='info'>
                             <Container fluid>
                         <Row>
-                            <h3>{dog.name}</h3>
+                            <h3>{selectedDog.name}</h3>
                             <div className='border'></div>
                         </Row>
                         <Row>
@@ -61,7 +70,7 @@ function SelectedDog() {
                                   </div>
                                   <div className='grid-item md'>
                                       <h5>Ras:</h5>
-                                      <p>{dog.race}</p>
+                                      <p>{selectedDog.race}</p>
                                   </div>    
                               </div>  
                               <div className='grid-container'>
@@ -72,7 +81,7 @@ function SelectedDog() {
                                   </div>
                                   <div className='grid-item md'>
                                       <h5>Ålder:</h5>
-                                      <p>{dog.age}</p>
+                                      <p>{selectedDog.age}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
@@ -83,7 +92,7 @@ function SelectedDog() {
                                   </div>
                                   <div className='grid-item md'>
                                       <h5>Kön:</h5>
-                                      <p>{dog.sex}</p>
+                                      <p>{selectedDog.sex}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
@@ -94,7 +103,7 @@ function SelectedDog() {
                                   </div>
                                   <div className='grid-item md'>
                                       <h5>Aktivitetsnivå:</h5>
-                                      <p>{dog.activityLevel}</p>
+                                      <p>{selectedDog.activityLevel}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
@@ -105,7 +114,7 @@ function SelectedDog() {
                                   </div>
                                   <div className='grid-item md'>
                                       <h5>Mankhöjd:</h5>
-                                      <p>{dog.height}</p>
+                                      <p>{selectedDog.height}</p>
                                   </div>    
                               </div> 
                             </Col>
@@ -118,7 +127,7 @@ function SelectedDog() {
                                   </div>
                                   <div className='grid-item md'>
                                       <h5>Vikt:</h5>
-                                      <p>{dog.weight}</p>
+                                      <p>{selectedDog.weight}</p>
                                   </div>    
                               </div>  
                               <div className='grid-container'>
@@ -129,7 +138,7 @@ function SelectedDog() {
                                   </div>
                                   <div className='grid-item md'>
                                       <h5>Kan bo med barn:</h5>
-                                      <p>{dog.kidsSpecification}</p>
+                                      <p>{selectedDog.kidsSpecification}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
@@ -140,7 +149,7 @@ function SelectedDog() {
                                   </div>
                                   <div className='grid-item md'>
                                       <h5>Kan bo med katter:</h5>
-                                      <p>{dog.cats}</p>
+                                      <p>{selectedDog.catsSpecification}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
@@ -151,7 +160,7 @@ function SelectedDog() {
                                   </div>
                                   <div className='grid-item md'>
                                       <h5>Kan bo med andra hundar:</h5>
-                                      <p>{dog.dogsSpecification}</p>
+                                      <p>{selectedDog.dogsSpecification}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
@@ -162,7 +171,7 @@ function SelectedDog() {
                                   </div>
                                   <div className='grid-item md'>
                                       <h5>Personlighet:</h5>
-                                      <p>{dog.personality}</p>
+                                      <p>{selectedDog.personality}</p>
                                   </div>    
                               </div>
                             </Col>
@@ -174,24 +183,24 @@ function SelectedDog() {
                 <Container fluid>
                     <Row>
                         <Col md='6'>
-                            <h5>Om {dog.name}:</h5>
-                            <p>{dog.description}</p>
+                            <h5>Om {selectedDog.name}:</h5>
+                            <p>{selectedDog.description}</p>
                             <h5>Vi söker:</h5>
-                            <p>{dog.description}</p>
+                            <p>{selectedDog.description}</p>
                             <h5>Kontaktperson:</h5>
-                            <p>{dog.contact}</p>
-                            <Button label={`Jag vill träffa ${dog.name}`} color={'primary'} disabled={true}/> 
+                            <p>{selectedDog.contact}</p>
+                            <Button label={`Jag vill träffa ${selectedDog.name}`} color={'primary'} disabled={true}/> 
                         </Col>
                         <Col md='6'>
                             <div className='grid-container-images'>
                                 <figure className='grid-item-image'>
-                                    <img src={dog.img} alt={`Hunden ${dog.name}`} /> 
+                                    <img src={selectedDog.img} alt={`Hunden ${selectedDog.name}`} /> 
                                 </figure>
                                 <figure className='grid-item-image'>
-                                    <img src={dog.img} alt={`Hunden ${dog.name}`} /> 
+                                    <img src={selectedDog.img} alt={`Hunden ${selectedDog.name}`} /> 
                                 </figure>
                                 <figure className='grid-item-image'>
-                                    <img src={dog.img} alt={`Hunden ${dog.name}`} /> 
+                                    <img src={selectedDog.img} alt={`Hunden ${selectedDog.name}`} /> 
                                 </figure>
                             </div>
 

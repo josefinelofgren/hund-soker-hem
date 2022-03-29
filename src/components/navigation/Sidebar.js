@@ -1,48 +1,40 @@
 // import libaries 
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 //import components
-import { Container, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import facebook from '../../assets/svg/facebook-icon.svg';
 import instagram from '../../assets/svg/instagram-icon.svg';
 
 function Sidebar({ sidebar, setSidebar }) {
 
-  const { t } = useTranslation('translation', {keyPrefix: 'navbar'});
-
   const links = [
       {
           label: 'Hundarna',
-          path: '#',
+          path: '/tillgangliga-hundar',
       },
       {
         label: 'Vår verksamhet',
-        path: '#',
+        path: '/var-verksamhet',
       },
       {
         label: 'Stöd oss',
-        path: '#',
+        path: '/stod-oss',
       },
       {
         label: 'Sök',
-        path: '#',
+        path: '/sok',
       },
   ]
 
   const sublinks = [
     {
         label: 'Kontakt',
-        path: '#',
-    },
-    {
-        label: 'Om oss',
-        path: '#',
+        path: '/kontakt',
     },
     {
       label: 'Integritetspolicy',
-      path: '#',
+      path: '/integritetspolicy',
     }
 ]
 
@@ -52,7 +44,7 @@ function Sidebar({ sidebar, setSidebar }) {
            <ul className='links'>
               {links.map((link, index) => { 
                  return (
-                    <Link to='#'>
+                    <Link key={index} onClick={() => setSidebar(!sidebar)} to={link.path}>
                         <li>{link.label}</li>
                         <div className='border'></div>
                     </Link>
