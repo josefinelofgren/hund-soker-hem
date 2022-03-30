@@ -8,15 +8,12 @@
 
 
 body {
-  margin: 0;
   font-family: 'Poppins', sans-serif, 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  min-height: 100vh;
-  white-space: pre-line;
 }
 
 *,
@@ -29,10 +26,6 @@ body {
   padding: spaces.$wrap-padding !important;
 }
 
-.content-wrap {
-  padding-bottom: 400px;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -43,6 +36,12 @@ img {
   width: 100%;
   height: auto;
   margin: 0 !important;
+}
+
+.back {
+  width: max-content;
+  margin: 0 auto;
+  margin-top: spaces.$lg;
 }
 
 li {
@@ -64,6 +63,18 @@ a {
   color: colors.$pink;
   text-decoration: none;
   font-weight: fonts.$bold;
+  margin: 0 auto;
+  border-bottom: 2px solid transparent;
+
+  &:focus {
+    color: colors.$pink;
+  }
+
+  &:hover {
+    color: colors.$pink;
+    width: max-content;
+    border-bottom: 2px solid colors.$pink;
+  }
 }
 
 //header
@@ -273,13 +284,11 @@ a {
 
 }
 
+
 // footer 
 .footer {
-  position: absolute;
-  bottom: 0;
   background-color: colors.$bg-tertiary;
   color: colors.$almostWhite;
-  min-height: 300px;
   
   h5 {
     font-weight: fonts.$bold;
@@ -386,6 +395,15 @@ a {
     grid-template-columns: 40px auto;
   }
 
+  .grid-item 
+  figure {
+    margin-top: spaces.$extraSm;
+  }
+
+  .grid-item.md {
+    margin-left: spaces.$sm;
+  }
+
   .grid-container-images {
     display: grid;
     grid-template-columns: 49% 49%;
@@ -404,9 +422,14 @@ a {
     margin: spaces.$extraSm 0 spaces.$md 0;
   }
 
-  .col-lg-6 {
+  .dog-header {
     background-color: colors.$bg-secondary;
-    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    .col-lg-6 {
+      padding: 0;
+    }
   }
 
   .row {

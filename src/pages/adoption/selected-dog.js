@@ -24,6 +24,10 @@ function SelectedDog() {
   let params = useParams();
   let path = params.name;
   const[selectedDog, setSelectedDog] = useState({});
+  const[imgPath, setImgPath] = useState('loading.png');
+  const[imgPath1, setImgPath1] = useState('loading.png');
+  const[imgPath2, setImgPath2] = useState('loading.png');
+  const[imgPath3, setImgPath3] = useState('loading.png');
 
   let selectedDogPath = {
       path: path,
@@ -40,17 +44,22 @@ function SelectedDog() {
       .then(res => res.json())
       .then(result => {
         setSelectedDog(result)
-        console.log(result)
+        setImgPath(result.img);
+        setImgPath1(result.img1);
+        setImgPath2(result.img2);
+        setImgPath3(result.img3);
       })
   },[])
+
 
   return (
     <div className='selected-dog'>
         <div className='dog'>
+        <div className='dog-header'>
                 <Row>
                     <Col lg='6'>
                         <figure className='dog-img'>
-                            <img src={selectedDog.img} alt={`Hunden ${selectedDog.name}`} /> 
+                            <img src={require(`../../assets/images/${imgPath}`)} alt={`Hunden ${selectedDog.name}`} /> 
                         </figure>
                     </Col>
                     <Col lg='6'>
@@ -61,116 +70,116 @@ function SelectedDog() {
                             <div className='border'></div>
                         </Row>
                         <Row>
-                            <Col md='6'>
+                            <Col sm='6'>
                               <div className='grid-container'>
                                   <div className='grid-item sm'>
                                       <figure>
-                                          icon
+                                          <img src={require('../../assets/svg/icon-dog.svg').default} alt='Icon dog'/> 
                                       </figure>
                                   </div>
                                   <div className='grid-item md'>
-                                      <h5>Ras:</h5>
+                                      <h6>Ras:</h6>
                                       <p>{selectedDog.race}</p>
                                   </div>    
                               </div>  
                               <div className='grid-container'>
                                   <div className='grid-item sm'>
                                       <figure>
-                                          icon
+                                          <img src={require('../../assets/svg/icon-balloon.svg').default} alt='Icon dog'/> 
                                       </figure>
                                   </div>
                                   <div className='grid-item md'>
-                                      <h5>Ålder:</h5>
+                                      <h6>Ålder:</h6>
                                       <p>{selectedDog.age}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
                                   <div className='grid-item sm'>
                                       <figure>
-                                          icon
+                                          <img src={require('../../assets/svg/icon-dog.svg').default} alt='Icon dog'/> 
                                       </figure>
                                   </div>
                                   <div className='grid-item md'>
-                                      <h5>Kön:</h5>
+                                      <h6>Kön:</h6>
                                       <p>{selectedDog.sex}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
                                   <div className='grid-item sm'>
                                       <figure>
-                                          icon
+                                          <img src={require('../../assets/svg/icon-dog.svg').default} alt='Icon dog'/> 
                                       </figure>
                                   </div>
                                   <div className='grid-item md'>
-                                      <h5>Aktivitetsnivå:</h5>
+                                      <h6>Aktivitetsnivå:</h6>
                                       <p>{selectedDog.activityLevel}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
                                   <div className='grid-item sm'>
                                       <figure>
-                                          icon
+                                          <img src={require('../../assets/svg/icon-dog.svg').default} alt='Icon dog'/> 
                                       </figure>
                                   </div>
                                   <div className='grid-item md'>
-                                      <h5>Mankhöjd:</h5>
+                                      <h6>Mankhöjd:</h6>
                                       <p>{selectedDog.height}</p>
                                   </div>    
                               </div> 
                             </Col>
-                            <Col md='6'>
+                            <Col sm='6'>
                             <div className='grid-container'>
                                   <div className='grid-item sm'>
                                       <figure>
-                                          icon
+                                          <img src={require('../../assets/svg/icon-dog.svg').default} alt='Icon dog'/> 
                                       </figure>
                                   </div>
                                   <div className='grid-item md'>
-                                      <h5>Vikt:</h5>
+                                      <h6>Vikt:</h6>
                                       <p>{selectedDog.weight}</p>
                                   </div>    
                               </div>  
                               <div className='grid-container'>
                                   <div className='grid-item sm'>
                                       <figure>
-                                          icon
+                                          <img src={require('../../assets/svg/icon-dog.svg').default} alt='Icon dog'/> 
                                       </figure>
                                   </div>
                                   <div className='grid-item md'>
-                                      <h5>Kan bo med barn:</h5>
+                                      <h6>Kan bo med barn:</h6>
                                       <p>{selectedDog.kidsSpecification}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
                                   <div className='grid-item sm'>
                                       <figure>
-                                          icon
+                                          <img src={require('../../assets/svg/icon-dog.svg').default} alt='Icon dog'/> 
                                       </figure>
                                   </div>
                                   <div className='grid-item md'>
-                                      <h5>Kan bo med katter:</h5>
+                                      <h6>Kan bo med katter:</h6>
                                       <p>{selectedDog.catsSpecification}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
                                   <div className='grid-item sm'>
                                       <figure>
-                                          icon
+                                          <img src={require('../../assets/svg/icon-dog2.svg').default} alt='Icon dog'/> 
                                       </figure>
                                   </div>
                                   <div className='grid-item md'>
-                                      <h5>Kan bo med andra hundar:</h5>
+                                      <h6>Kan bo med andra hundar:</h6>
                                       <p>{selectedDog.dogsSpecification}</p>
                                   </div>    
                               </div> 
                               <div className='grid-container'>
                                   <div className='grid-item sm'>
                                       <figure>
-                                          icon
+                                          <img src={require('../../assets/svg/icon-dog.svg').default} alt='Icon dog'/> 
                                       </figure>
                                   </div>
                                   <div className='grid-item md'>
-                                      <h5>Personlighet:</h5>
+                                      <h6>Personlighet:</h6>
                                       <p>{selectedDog.personality}</p>
                                   </div>    
                               </div>
@@ -180,9 +189,10 @@ function SelectedDog() {
                         </div>
                     </Col>
                 </Row>
+                </div>
                 <Container fluid>
                     <Row>
-                        <Col md='6'>
+                        <Col lg='6'>
                             <h5>Om {selectedDog.name}:</h5>
                             <p>{selectedDog.description}</p>
                             <h5>Vi söker:</h5>
@@ -191,20 +201,26 @@ function SelectedDog() {
                             <p>{selectedDog.contact}</p>
                             <Button label={`Jag vill träffa ${selectedDog.name}`} color={'primary'} disabled={true}/> 
                         </Col>
-                        <Col md='6'>
+                        <Col lg='6'>
                             <div className='grid-container-images'>
                                 <figure className='grid-item-image'>
-                                    <img src={selectedDog.img} alt={`Hunden ${selectedDog.name}`} /> 
+                                    <img src={require(`../../assets/images/${imgPath1}`)} alt={`Hunden ${selectedDog.name}`} /> 
                                 </figure>
                                 <figure className='grid-item-image'>
-                                    <img src={selectedDog.img} alt={`Hunden ${selectedDog.name}`} /> 
+                                    <img src={require(`../../assets/images/${imgPath2}`)} alt={`Hunden ${selectedDog.name}`} /> 
                                 </figure>
                                 <figure className='grid-item-image'>
-                                    <img src={selectedDog.img} alt={`Hunden ${selectedDog.name}`} /> 
+                                    <img src={require(`../../assets/images/${imgPath3}`)} alt={`Hunden ${selectedDog.name}`} /> 
                                 </figure>
                             </div>
-
                         </Col>
+                    </Row>
+                    <Row>
+                        <Link to='/tillgangliga-hundar'>
+                            <div className='back'>
+                                Tillbaka
+                            </div>
+                        </Link>
                     </Row>
                 </Container>
         </div>

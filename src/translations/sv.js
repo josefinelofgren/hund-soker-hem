@@ -37,7 +37,7 @@ const translation = {
         'intro-text': 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.',
         
         'homeless-dogs-title': 'Hemösa hundar i Italien',
-        'homeless-dogs-text': '',
+        'homeless-dogs-text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse velit felis, euismod in convallis ac, pharetra at mauris. Maecenas id tortor eget odio blandit rutrum nec a tortor. Nunc eget maximus nisi. Praesent ullamcorper odio placerat molestie imperdiet. Etiam nec tortor eu est varius feugiat. Sed tempus accumsan ante, quis sollicitudin nisi rhoncus vitae. Vestibulum sed aliquet ante. Nulla nunc nisl, scelerisque quis tincidunt eget, posuere pulvinar tellus. Etiam nibh mi, placerat et ullamcorper non, bibendum quis elit. Sed justo nisi, maximus vel dolor a, interdum accumsan nisl.',
         'support-us-title': 'Stöd vårt arbete',
         'support-us-text': 'Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.',
         'support-us-btn': 'Skänk en gåva',

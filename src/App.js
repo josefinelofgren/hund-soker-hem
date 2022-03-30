@@ -44,7 +44,7 @@ function App() {
       <Sidebar 
         sidebar={sidebar}
         setSidebar={setSidebar}
-      /> 
+      />
       <div className='content-wrap'>
             <Routes>
                 <Route 

@@ -19,6 +19,7 @@ function AboutAdoption() {
   return (
     <div className='about-adoption'>
         <div className='about'>
+        <div className='dog-header'>
                 <Row>
                     <Col lg='6'>
                         <figure className='dog-img'>
@@ -68,6 +69,7 @@ function AboutAdoption() {
                        
                     </Row>
                 </Container>
+                </div>
         </div>
     </div>
   );

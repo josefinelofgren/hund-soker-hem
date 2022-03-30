@@ -19,6 +19,7 @@ function OurBusiness() {
   return (
     <div className='our-business'>
         <div className='business'>
+        <div className='dog-header'>
                 <Row>
                     <Col lg='6'>
                         <figure className='dog-img'>
@@ -45,6 +46,7 @@ function OurBusiness() {
                     </Col>
                 </Row>
         </div>
+       </div>
     </div>
   );
 }

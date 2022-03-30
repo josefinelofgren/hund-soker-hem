@@ -64,9 +64,9 @@ function Nav({ sidebar, setSidebar }) {
            )}
           <Link
             to='#'
-            className={sidebar ? `sidebar-btn is-active` : `sidebar-btn`}
+            className='navbar-btn'
             onClick={() => setSidebar(!sidebar)}>
-            <div className={sidebar ? `sidebar-burger is-active`: `sidebar-burger`} />
+            <div className='navbar-burger' />
         </Link>
         </div>        
       </Container>

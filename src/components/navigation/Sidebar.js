@@ -40,6 +40,12 @@ function Sidebar({ sidebar, setSidebar }) {
 
   return (
     <nav className={sidebar ? 'sidebar-wrap open' : 'sidebar-wrap'}>
+      <Link
+          to='#'
+          className={sidebar ? 'sidebar-btn is-active' : 'sidebar-btn'}
+          onClick={() => setSidebar(!sidebar)}>
+          <div className='sidebar-burger' />
+      </Link>
       <div className={sidebar ? 'sidebar open' : 'sidebar'}>
            <ul className='links'>
               {links.map((link, index) => { 

@@ -20,7 +20,10 @@ function AvailableDogs() {
   useEffect(() => {
     fetch(available_dogs_URI)
     .then(response => response.json())
-    .then(data => setDogs(data));
+    .then(data => {
+        setDogs(data);
+        console.log(data)
+    });
   },[])
 
   return (
@@ -63,11 +66,12 @@ function AvailableDogs() {
 }
 
 function Dog ({ name, race, path, age, description, sex, city, img }) {
+
     return (
         <div className='dog'>
             <div className='container'>
                 <figure>
-                    <img src={img} alt='Tillgänglig hund för adoption' />
+                    <img src={require(`../../assets/images/${img}`)} alt='Tillgänglig hund för adoption' />
                 </figure>
                 <h4>{city}</h4>
                 <h3>{name}</h3>

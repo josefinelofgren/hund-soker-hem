@@ -26,19 +26,18 @@
   }
 }
 
-.sidebar-btn {
+.navbar-btn {
   width: 40px;
   height: 50px;
   cursor: pointer;
   transition: 850ms;
-  z-index: 10;
   display: inline-block;
   position: relative;
   margin-left: 40px;
   top: 20px;
 }
-  
-.sidebar-burger {
+
+.navbar-burger {
   width: 30px;
   height: 4px;
   background-color: colors.$darkGreen;
@@ -56,7 +55,6 @@
     background-color: colors.$darkGreen;
     border-radius: 5px;
     transition: all .3s ease-in-out;
-    z-index: 99999;
   }
 
   &::before{
@@ -67,21 +65,7 @@
     transform: translateY(7.5px);
   }
 }
-    
-// transform burger into close icon  
-.sidebar-btn.is-active .sidebar-burger {
-  background: transparent;
-}
-    
-.sidebar-btn.is-active .sidebar-burger::before {
-  transform: rotate(-135deg);
-  background: #fff;
-}
-    
-.sidebar-btn.is-active .sidebar-burger::after {
-  transform: rotate(135deg);
-  background: #fff;
-}
+
 
 // sidebar
 .sidebar {
@@ -142,20 +126,78 @@
   z-index: 9;
   background-color: colors.$bg-tertiary;
   opacity: 0;
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
   width: 0;
   height: 100vh;
   font-size: 1.5em;
   top: 0px;
   right: 0px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
 
   &.open {
     width: 400px;
     height: 100vh;
     opacity: 1;
-    -webkit-animation: anim-jelly 0.8s linear forwards;
-    animation: anim-jelly 0.8s linear forwards;
     box-shadow:0 0 0 10000px rgba(255, 255, 255, 0.3);
   }
+}
+
+
+.sidebar-btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 850ms;
+  position: absolute;
+  right: spaces.$md;
+  top: spaces.$lg;
+  display: none;
+}
+
+.sidebar-btn.is-active {
+  display: inline-block;
+}
+  
+.sidebar-burger {
+  width: 30px;
+  height: 4px;
+  background-color: colors.$almostWhite;
+  border-radius: 5px;
+  transition: all .1s ease-in-out;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: colors.$almostWhite;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+  }
+
+  &::before{
+    transform: translateY(-7.5px);
+  }
+
+  &::after{
+    transform: translateY(7.5px);
+  }
+
+}
+    
+// transform burger into close icon  
+.sidebar-btn.is-active .sidebar-burger {
+  background: transparent;
+}
+    
+.sidebar-btn.is-active .sidebar-burger::before {
+  transform: rotate(-135deg);
+  background: #fff;
+}
+    
+.sidebar-btn.is-active .sidebar-burger::after {
+  transform: rotate(135deg);
+  background: #fff;
 }
