@@ -1,6 +1,6 @@
-@use './colors.scss';
-@use './fonts.scss';
-@use './spaces.scss';
+@use "./colors.scss";
+@use "./fonts.scss";
+@use "./spaces.scss";
 
 button {
   border-radius: 50px;
@@ -10,95 +10,85 @@ button {
   font-weight: fonts.$bold;
   cursor: pointer;
 
-  &.disabled{
-    padding: 20px 20px; 
+  &.disabled {
+    padding: 20px 20px;
   }
 
+  // input buttons
   &.input-btn {
     background-color: transparent;
     border: 2px solid colors.$silver;
     color: colors.$silver;
-    padding: 20px 30px;
+    padding: 15px 20px;
 
-  &.is-active {
-    border: 2px solid colors.$darkGreen;
-    color: colors.$darkGreen;
-  }
+    &.is-active {
+      border: 2px solid colors.$darkGreen;
+      color: colors.$almostWhite;
+      background-color: colors.$darkGreen;
+    }
 
     &:hover {
       border: 2px solid colors.$darkGreen;
-      color: colors.$darkGreen;
+      color: colors.$almostWhite;
+      background-color: colors.$darkGreen;
     }
   }
 
+  // primary button
   &.primary {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background-color: colors.$btn-pink;
+
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      background-color: colors.$btn-pink-hover;
+    }
   }
-    
+
+  // secondary button
   &.secondary {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background-color: colors.$btn-darkGreen;
+
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      background-color: colors.$btn-darkGreen-hover;
+    }
   }
 
+  // tertiary button
   &.tertiary {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background-color: colors.$btn-green;
-  }
-    
-  &.sm {
 
-
-    figure {
-      width: 30px;
-    }
-
-    label {
-      font-size: fonts.$btn-sm;
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      background-color: colors.$btn-green-hover;
     }
   }
-  
 
+  // content
   .content {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
 
-  figure {
-    width: 40px;
-    margin: 0;
-    position: relative !important;
+    figure {
+      width: 40px;
+      margin: 0;
+      position: relative !important;
 
-    &.disabled{
-      display: none;
+      &.disabled {
+        display: none;
+      }
+    }
+
+    label {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: fonts.$btn;
+      padding-left: 10px;
+      cursor: pointer;
     }
   }
-
-  label {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: fonts.$btn;
-    padding-left: 10px;
-    cursor: pointer;
-  }
 }
-
-button:hover {
-  &.primary {
-    transition: all .2s ease-in-out;
-    background-color: colors.$btn-pink-hover;
-  }
-    
-  &.secondary {
-    transition: all .2s ease-in-out;
-    background-color: colors.$btn-darkGreen-hover;
-  }
-    
-  &.tertiary {
-    transition: all .2s ease-in-out;
-    background-color: colors.$btn-green-hover;
-  }
-}
-
-

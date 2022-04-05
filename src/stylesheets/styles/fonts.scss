@@ -1,4 +1,4 @@
-// font weights 
+// font weights
 $normal: 400;
 $bold: 700;
 $extraBold: 800;
@@ -19,16 +19,16 @@ h1 {
   font-size: 3rem;
   font-weight: $bold;
 }
-  
+
 h2 {
   font-size: 2.5rem;
 }
-  
+
 h3 {
   font-size: 1.8rem;
   font-weight: $bold;
 }
-  
+
 h4 {
   font-size: 1.4rem;
 }
@@ -36,11 +36,12 @@ h4 {
 h5 {
   font-size: 1.2rem;
 }
-  
+
 h6 {
   font-weight: $bold;
 }
-  
-h6, p {
+
+h6,
+p {
   font-size: $paragraph;
 }

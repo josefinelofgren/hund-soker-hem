@@ -1,47 +1,57 @@
 // import libaries
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import * as Scroll from "react-scroll";
 
 //import components
 import { Container, Row, Col } from "react-bootstrap";
-import Button from "../../components/buttons/button";
+import { store } from "../../redux/store";
 
 // fetch
-const available_dogs_URI = "http://localhost:8080/available-dogs/all-dogs";
-// const available_dogs_URI = 'https://diskrid-server.herokuapp.com/available-dogs/all-dogs';
+const matched_dogs_URI = "http://localhost:8080/available-dogs/matched-dogs";
+// const matched_dogs_URI = 'https://diskrid-server.herokuapp.com/available-dogs/matched-dogs';
 
-function AvailableDogs() {
-  const { t } = useTranslation("translation", { keyPrefix: "available-dogs" });
+function MatchedDogs() {
+  // scroll to top when routing
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
+  const { t } = useTranslation("translation", { keyPrefix: "matched-dogs" });
   const [dogs, setDogs] = useState([]);
+  const filter = store.getState().filter;
   const LinkScroll = Scroll.Link;
 
   useEffect(() => {
-    fetch(available_dogs_URI)
-      .then((response) => response.json())
-      .then((data) => {
-        setDogs(data);
-        console.log(data);
+    fetch(matched_dogs_URI, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(filter),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        setDogs(result);
       });
+
+    console.log(filter);
   }, []);
 
   return (
-    <div className="available-dogs">
+    <div className="matched-dogs">
       <div className="prewords">
         <Container fluid>
           <h3>{t("title")}</h3>
           <p>{t("description")}</p>
           <h5>{t("subtitle-two")}</h5>
           <p>{t("text-two")}</p>
-          <h5>{t("subtitle-one")}</h5>
-          <p>{t("text-one")}</p>
-          <Button label={t("find-match")} color={"primary"} />
         </Container>
       </div>
       <div id="dogs" className="dogs">
         <Container fluid>
-          <h3 className="title">{t("available-dogs-title")}</h3>
+          <h3 className="title">{t("matched-dogs-title")}</h3>
           <Row>
             {dogs.map((dog, index) => {
               return (
@@ -104,4 +114,4 @@ function Dog({ name, race, path, age, description, sex, city, img }) {
   );
 }
 
-export default AvailableDogs;
+export default MatchedDogs;

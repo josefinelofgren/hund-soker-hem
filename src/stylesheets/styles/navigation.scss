@@ -1,28 +1,25 @@
-// navbar 
+// navbar
 .navbar {
   height: 100px;
-  background-color: #fff;
+
+  .extra-links {
+    display: inline-block;
+  }
 
   li {
-    font-size: fonts.$navbar-link;
-    font-weight: fonts.$bold;
     margin-right: 40px;
     display: inline-block;
     color: colors.$darkGreen;
+
+    &:hover {
+      color: colors.$darkGreen-hover;
+    }
 
     figure {
       width: 10px;
       display: inline-block;
       margin-left: 8px;
     }
-
-    &:hover {
-      color: colors.$darkGreen-hover;
-    }
-  }
-
-  .extra-links {
-    display: inline-block;
   }
 }
 
@@ -42,30 +39,29 @@
   height: 4px;
   background-color: colors.$darkGreen;
   border-radius: 5px;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   position: relative;
   top: 20px;
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 30px;
     height: 4px;
     background-color: colors.$darkGreen;
     border-radius: 5px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
-  &::before{
+  &::before {
     transform: translateY(-7.5px);
   }
 
-  &::after{
+  &::after {
     transform: translateY(7.5px);
   }
 }
-
 
 // sidebar
 .sidebar {
@@ -84,10 +80,13 @@
   a {
     color: colors.$almostWhite;
     text-decoration: none;
+
+    &:hover {
+      color: colors.$almostWhite;
+    }
   }
 
   ul {
-    font-weight: fonts.$normal;
     padding: 0;
   }
 
@@ -96,10 +95,11 @@
       margin: 20px 0;
       font-size: fonts.$sidebar-link;
       display: block;
-      transition: all .1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+      font-weight: fonts.$normal;
 
       &:hover {
-        transition: all .1s ease-in-out;
+        transition: all 0.1s ease-in-out;
         font-weight: fonts.$bold;
       }
     }
@@ -108,13 +108,14 @@
   .sublinks {
     li {
       font-size: fonts.$sidebar-sublink;
+      font-weight: fonts.$normal;
       margin: 5px 0;
       padding: 0;
       display: block;
-      transition: all .1s ease-in-out;
+      transition: all 0.1s ease-in-out;
 
       &:hover {
-        transition: all .1s ease-in-out;
+        transition: all 0.1s ease-in-out;
         font-weight: fonts.$bold;
       }
     }
@@ -138,10 +139,9 @@
     width: 400px;
     height: 100vh;
     opacity: 1;
-    box-shadow:0 0 0 10000px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 10000px rgba(255, 255, 255, 0.3);
   }
 }
-
 
 .sidebar-btn {
   width: 40px;
@@ -157,46 +157,45 @@
 .sidebar-btn.is-active {
   display: inline-block;
 }
-  
+
 .sidebar-burger {
   width: 30px;
   height: 4px;
   background-color: colors.$almostWhite;
   border-radius: 5px;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   position: relative;
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 30px;
     height: 4px;
     background-color: colors.$almostWhite;
     border-radius: 5px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
-  &::before{
+  &::before {
     transform: translateY(-7.5px);
   }
 
-  &::after{
+  &::after {
     transform: translateY(7.5px);
   }
-
 }
-    
-// transform burger into close icon  
+
+// transform burger into close icon
 .sidebar-btn.is-active .sidebar-burger {
   background: transparent;
 }
-    
+
 .sidebar-btn.is-active .sidebar-burger::before {
   transform: rotate(-135deg);
   background: #fff;
 }
-    
+
 .sidebar-btn.is-active .sidebar-burger::after {
   transform: rotate(135deg);
   background: #fff;

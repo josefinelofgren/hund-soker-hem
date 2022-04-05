@@ -1,16 +1,14 @@
-@use './styles/colors.scss';
-@use './styles/fonts.scss';
-@use './styles/spaces.scss';
-@import './styles/fonts.scss';
-@import './styles/buttons.scss';
-@import './styles/navigation.scss';
-@import './styles/forms.scss';
-
+@use "./styles/colors.scss";
+@use "./styles/fonts.scss";
+@use "./styles/spaces.scss";
+@import "./styles/fonts.scss";
+@import "./styles/buttons.scss";
+@import "./styles/navigation.scss";
+@import "./styles/forms.scss";
 
 body {
-  font-family: 'Poppins', sans-serif, 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Poppins", sans-serif, "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -26,11 +24,7 @@ body {
   padding: spaces.$wrap-padding !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
+// images
 img {
   position: relative;
   width: 100%;
@@ -38,16 +32,51 @@ img {
   margin: 0 !important;
 }
 
-.back {
+.dog-img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+// links
+a {
+  color: colors.$pink;
+  text-decoration: none;
+  font-weight: fonts.$bold;
+  margin: 0 auto;
+
+  &:focus {
+    color: colors.$pink;
+  }
+
+  &:hover {
+    color: colors.$pink;
+  }
+}
+
+.link {
   width: max-content;
   margin: 0 auto;
   margin-top: spaces.$lg;
-}
-
-li {
+  border-bottom: 2px solid transparent;
+  color: colors.$pink;
   cursor: pointer;
+
+  &:hover {
+    border-bottom: 2px solid colors.$pink;
+  }
 }
 
+// icons
 .social-icons {
   figure {
     display: inline-block;
@@ -59,31 +88,13 @@ li {
   }
 }
 
-a {
-  color: colors.$pink;
-  text-decoration: none;
-  font-weight: fonts.$bold;
-  margin: 0 auto;
-  border-bottom: 2px solid transparent;
-
-  &:focus {
-    color: colors.$pink;
-  }
-
-  &:hover {
-    color: colors.$pink;
-    width: max-content;
-    border-bottom: 2px solid colors.$pink;
-  }
-}
-
 //header
 .header {
   height: 600px;
   position: relative;
 
   h1 {
-    color: colors.$darkGreen-hover;
+    color: colors.$darkGreen-darker;
   }
 
   .content {
@@ -125,7 +136,7 @@ a {
   }
 
   .border {
-    border-color: colors.$darkGreen !important; 
+    border-color: colors.$darkGreen !important;
     margin-bottom: spaces.$extraSm;
     display: none;
 
@@ -142,77 +153,83 @@ a {
     }
   }
 
-    .drop img {
-      width: 60px;
-      z-index: -10;
-      position: absolute;
+  .drop img {
+    width: 60px;
+    z-index: -10;
+    position: absolute;
+    display: none;
+    left: 20px;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  .adoption-process-step {
+    cursor: pointer;
+
+    &.one:hover h3,
+    h4 {
+      transition: all 0.1s ease-in-out;
+      color: colors.$darkGreen-hover;
+    }
+
+    &.one:hover h3.is-active,
+    &.two:hover h3.is-active,
+    &.three:hover h3.is-active {
+      color: colors.$almostWhite;
+    }
+
+    &.one:hover h3,
+    &.one:hover h4,
+    &.two:hover h3,
+    &.two:hover h4,
+    &.three:hover h3,
+    &.three:hover h4 {
+      transition: all 0.1s ease-in-out;
+      color: colors.$darkGreen-hover;
+    }
+
+    h3 {
+      margin-right: spaces.$md;
+      color: colors.$darkGreen-opacity;
+      transition: all 0.2s ease-in-out;
+
+      &.is-active {
+        color: colors.$almostWhite;
+      }
+    }
+
+    h4 {
+      color: colors.$darkGreen-opacity;
+      font-weight: fonts.$bold;
+      transition: all 0.2s ease-in-out;
+
+      &.is-active {
+        color: colors.$darkGreen !important;
+      }
+    }
+
+    h3,
+    .title {
+      position: relative;
+      left: spaces.$md;
+      display: inline-block;
+    }
+
+    p {
+      position: relative;
+      margin-left: 82px;
       display: none;
-      left: 20px;
 
       &.is-active {
         display: block;
       }
     }
-
-    .adoption-process-step {
-      cursor: pointer;
-
-      &.one:hover h3, h4 {
-        transition: all .1s ease-in-out;
-        color: colors.$darkGreen-hover;
-      }
-
-      &.one:hover h3.is-active, &.two:hover h3.is-active, &.three:hover h3.is-active {
-        color: colors.$almostWhite;
-      }
-
-      &.one:hover h3, &.one:hover h4,  
-      &.two:hover h3, &.two:hover h4, 
-      &.three:hover h3, &.three:hover h4
-      {
-        transition: all .1s ease-in-out;
-        color: colors.$darkGreen-hover;
-      }
-
-      h3 {
-        margin-right: spaces.$md;
-        color: colors.$darkGreen-opacity;
-        transition: all .2s ease-in-out;
-
-        &.is-active {
-          color: colors.$almostWhite;
-        }
-      }
-
-      h4 {
-        color: colors.$darkGreen-opacity;
-        font-weight: fonts.$bold; 
-        transition: all .2s ease-in-out;
-    
-        &.is-active {
-          color: colors.$darkGreen !important;
-        }
-      }
-  
-      h3, .title {
-        position: relative;
-        left: spaces.$md;
-        display: inline-block;
-      }
-
-      p {
-        position: relative;
-        margin-left: 82px;
-        display: none;
-
-        &.is-active {
-          display: block;
-        }
-      }
-    }
+  }
 }
 
-// homeless dogs 
+// homeless dogs
 .homeless-dogs {
   background-color: colors.$bg-secondary;
 
@@ -237,11 +254,13 @@ a {
   }
 }
 
-//monthly donor 
+//monthly donor
 .monthly-donor {
   text-align: center;
 
-  h3, p.text, h6 {
+  h3,
+  p.text,
+  h6 {
     margin-bottom: spaces.$md;
   }
 
@@ -254,10 +273,10 @@ a {
     margin: spaces.$sm;
   }
 
-  .input-btn, input {
+  .input-btn,
+  input {
     margin: spaces.$extraSm;
   }
-
 
   button.primary {
     display: block;
@@ -265,7 +284,7 @@ a {
   }
 }
 
-// sponsors 
+// sponsors
 .sponsors {
   background-color: colors.$bg-secondary;
 
@@ -279,17 +298,15 @@ a {
 
     img {
       max-width: 100px;
-    } 
+    }
   }
-
 }
 
-
-// footer 
+// footer
 .footer {
   background-color: colors.$bg-tertiary;
   color: colors.$almostWhite;
-  
+
   h5 {
     font-weight: fonts.$bold;
     margin-bottom: spaces.$sm;
@@ -309,13 +326,12 @@ a {
   }
 }
 
-
 //available-dogs
-.available-dogs {
-
+.available-dogs,
+.matched-dogs {
   .prewords {
     background-color: colors.$bg-secondary;
-    
+
     h3 {
       color: colors.$primary;
     }
@@ -339,54 +355,39 @@ a {
     }
   }
 
-    .dog {
-      margin-bottom: spaces.$extraLg;
+  .dog {
+    margin-bottom: spaces.$extraLg;
 
-      h3 {
-        color: colors.$secondary;
-      }
-
-      h3, h5 {
-        color: colors.$primary;
-      }
-
-      h5 {
-        font-weight: fonts.$bold;
-      }
-
-      h5 span, h6 span {
-        font-weight: fonts.$normal;
-        font-size: fonts.$paragraph;
-        color: colors.$secondary !important;
-        margin-left: 2px;
-      }
-
-      h6 {
-        margin-bottom: spaces.$sm;
-      }
-
-      .read-more {
-        color: colors.$pink;
-      }
+    h3 {
+      color: colors.$secondary;
     }
-}
 
-// dog img 
-.dog-img {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+    h3,
+    h5 {
+      color: colors.$primary;
+    }
 
-  img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
+    h5 {
+      font-weight: fonts.$bold;
+    }
+
+    h5 span,
+    h6 span {
+      font-weight: fonts.$normal;
+      font-size: fonts.$paragraph;
+      color: colors.$secondary !important;
+      margin-left: 2px;
+    }
+
+    h6 {
+      margin-bottom: spaces.$sm;
+    }
+
+    .read-more {
+      color: colors.$pink;
+    }
   }
 }
-
 
 // selected dog
 .selected-dog {
@@ -395,8 +396,7 @@ a {
     grid-template-columns: 40px auto;
   }
 
-  .grid-item 
-  figure {
+  .grid-item figure {
     margin-top: spaces.$extraSm;
   }
 
@@ -415,8 +415,11 @@ a {
   }
 }
 
-
-.about-adoption, .our-business, .selected-dog {
+// pages
+.about-adoption,
+.our-business,
+.selected-dog,
+.find-match {
   .border {
     border-color: colors.$primary !important;
     margin: spaces.$extraSm 0 spaces.$md 0;
@@ -437,7 +440,9 @@ a {
     padding: 0;
   }
 
-  h3, h5, h4 {
+  h3,
+  h5,
+  h4 {
     color: colors.$primary;
     font-weight: fonts.$bold;
   }
@@ -445,7 +450,7 @@ a {
   p {
     margin-bottom: spaces.$md;
   }
-  
+
   p span {
     font-weight: fonts.$bold;
     color: colors.$primary;
@@ -456,8 +461,8 @@ a {
   }
 }
 
+// about adoption
 .about-adoption {
-
   .question span {
     color: colors.$pink;
   }
@@ -465,5 +470,59 @@ a {
   .question.mb {
     margin-bottom: spaces.$sm !important;
   }
+}
 
+// find match
+.find-match {
+  .option {
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+
+    button {
+      width: Calc(100% - spaces.$md);
+    }
+  }
+
+  h5,
+  h2,
+  .description {
+    text-align: center;
+  }
+
+  button {
+    margin-right: spaces.$md !important;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  h6 {
+    font-weight: fonts.$normal !important;
+  }
+
+  h2 {
+    font-weight: fonts.$bold;
+    margin-bottom: spaces.$md;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: spaces.$extraSm 0 spaces.$lg 0;
+  }
+
+  .row.kids {
+    display: none;
+  }
+
+  .row.kids.is-active {
+    display: block;
+  }
+
+  .description {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
