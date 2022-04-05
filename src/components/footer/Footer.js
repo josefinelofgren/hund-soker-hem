@@ -16,7 +16,6 @@ function Footer() {
 
   return (
     <div className="footer">
-      <h1>hej</h1>
       <Container fluid>
         <Row>
           <Col md="3">

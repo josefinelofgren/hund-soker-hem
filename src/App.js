@@ -36,23 +36,23 @@ function App() {
         <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
         <div className="content-wrap">
           <Routes>
-            <Route exact path="/" element={<LandingPage />}></Route>
-            <Route path="/hitta-min-match" element={<FindMatch />}></Route>
+            <Route exact path="/pawpatrol" element={<LandingPage />}></Route>
+            <Route path="/pawpatrol/hitta-min-match" element={<FindMatch />}></Route>
             <Route
-              path="/hitta-min-match/matchningar"
+              path="/pawpatrol/hitta-min-match/matchningar"
               element={<MatchedDogs />}
             ></Route>
             <Route
-              path="/tillgangliga-hundar"
+              path="/pawpatrol/tillgangliga-hundar"
               element={<AvailableDogs />}
             ></Route>
             <Route
-              path="/tillgangliga-hundar/:name"
+              path="/pawpatrol/tillgangliga-hundar/:name"
               element={<SelectedDog />}
             ></Route>
-            <Route path="/att-adoptera" element={<AboutAdoption />}></Route>
-            <Route path="/var-verksamhet" element={<OurBusiness />}></Route>
-            <Route path="/stod-oss" element={<LandingPage />}></Route>
+            <Route path="/pawpatrol/att-adoptera" element={<AboutAdoption />}></Route>
+            <Route path="/pawpatrol/var-verksamhet" element={<OurBusiness />}></Route>
+            <Route path="/pawpatrol/stod-oss" element={<LandingPage />}></Route>
           </Routes>
         </div>
         <Footer />

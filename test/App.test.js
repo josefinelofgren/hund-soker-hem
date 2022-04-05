@@ -6,15 +6,15 @@ describe('renders without crashing', () => {
     'we view the welcome h1 header',
     async () => {
       let browser = await puppeteer.launch({
-        headless: true,
+        headless: false,
       });
       let page = await browser.newPage();
 
       await page.goto('http://localhost:3030');
-      await page.waitForSelector('.welcome-message');
+      await page.waitForSelector('.header');
 
       const header = await page.$eval('h1', e => e.innerHTML);
-      expect(header).toEqual('Awesome that you want to apply!');
+      expect(header).toEqual('Möt din match');
 
       browser.close();
     },
