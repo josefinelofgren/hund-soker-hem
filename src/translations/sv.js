@@ -177,6 +177,22 @@ const translation = {
     "matched-dogs-title": "Dina matchningar",
     filter: "Filtrera",
   },
+  "registration-of-interest": {
+    title: 'Intresseanmälan',
+    description: "Vi får många intresseanmälningar varje dag. Genom att läsa och följa instruktionerna noga hjälper du oss att jobba effektivt i jakten på ett kärleksfullt och passande hem till varje hund.",
+    'subtitle': 'Har du tänkt igenom ditt beslut noga?',
+    'sub-description': 'Att adoptera en hund är ett stort beslut. När en hund byter hem är det en omvälvande omställning. Det är viktigt att du kan och vill anpassa dig efter din nya familjemedlem och erbjuda en lugn och trygg hemmiljö med mycket tid och kärlek. Under fliken',
+    'registration-of-interest-info-title': 'Intresseanmälan för {{name}}',
+    'registration-of-interest-info-description': "Vad kul att du är intresserad av att bli {{name}}'s föralltid hem. Vi uppskattar att du tar dig tid att noga läsa igenom hundens presentation och att du väljer en hund som passar dig och din livsstil- och situation. Om du är osäker på vilka hundar som kan passa dig så kan du göra vårt",
+    'registration-of-interest-info-subtitle': 'Hur går det till?',
+    'registration-of-interest-info-sub-description': 'När en hund söker nytt hem är det inte först till kvarn som gäller, det går heller inte att boka en hund genom din intressenamälan. Vi väljer det hem som vi tror skulle passa bäst för varje hund.  Om du går vidare i processen kommer vi att boka in ett första möte tillsammans med dig där du och {{name}} får chans att träffa varandra.',
+    'registration-of-interest-info-subtitle-two': 'Ett första intryck',
+    'registration-of-interest-info-sub-description-two': 'Din intresseanmälan är vårt första intryck av dig. Vi värdesätter därför att du är uppriktig och personlig i dina svar. Vårt mål är att de hundar vi hittar nya hem åt ska komma till sitt föralltid hem, därför är det viktigt att du utförligt beskriver din hur en vardag hos och tillsammans med dig kommer att se ut så att vi kan avgöra om {{name}} skulle passa in och fungera i den miljön.',
+    'registration-of-interest-form-title': 'Formulär för intresseanmälan',
+    'title-registration-sent': 'Tack för din intresseanmälan till {{name}}',
+    'description-registration-sent-part-one': 'Vi bearbetar de intresseanmälningar som kommer in så fort vi kan. Beräknad tid för återkoppling sker vanligtvis inom en vecka. Vi kommer att ta kontakt med dig oavsett om vi väljer att gå vidare med din intresseanmälan för {{name}} eller ej',
+    'description-registration-sent-part-two': 'Vissa hundar får betydligt fler intresseanmälningar än andra, exempelvis valpar. Idag har vi många hundar som behöver ett nytt hem och kanske tycker vi att du skulle matcha bätte med någon av de andra, då meddelar vi dig det i samband med återkopplingen.'
+  },
 };
 
 export default translation;

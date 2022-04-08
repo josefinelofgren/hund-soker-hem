@@ -25,7 +25,14 @@ function Nav({ sidebar, setSidebar }) {
     <Navbar>
       <Container fluid>
         <Navbar.Brand>
-          <Link to={"/"}>Paw Patrol</Link>
+          <Link to={"/"}>
+            <figure>
+              <img
+                src={require("../../assets/svg/logo-pink.svg").default}
+                alt="Icon dog"
+              />
+            </figure>
+          </Link>
         </Navbar.Brand>
         <div className="links">
           {windowDimensions.width >= 1100 && (

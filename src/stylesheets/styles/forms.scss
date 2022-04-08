@@ -1,20 +1,97 @@
+@use "./fonts.scss";
+@use "./colors.scss";
+@use "./spaces.scss";
+
 form {
-  margin: 0 !important;
-  padding: 0 !important;
-}
+  margin: 0;
+  padding: 0;
+  margin-bottom: spaces.$md !important;
 
-input {
-  border-radius: 50px;
-  padding: 20px 30px;
-  width: 120px;
-  background-color: transparent;
-  border: 2px solid colors.$silver;
-  color: colors.$darkGreen;
-  font-weight: fonts.$bold;
-  cursor: pointer;
-  text-align: center;
-
-  &:focus {
-    outline-color: colors.$darkGreen;
+  .input-content {
+    label {
+      display: block;
+      font-weight: fonts.$bold;
+      font-size: fonts.$sm;
+      max-width: 400px;
+      margin-bottom: spaces.$extraSm;
+    }
   }
 }
+
+label {
+  font-weight: fonts.$bold;
+  font-size: fonts.$sm;
+}
+
+.input {
+  width: 100%;
+  padding: 20px;
+  height: 50px;
+  margin-bottom: spaces.$sm;
+
+  &:focus {
+    outline-color: colors.$pink;
+  }
+
+  &.md {
+    height: 100px;
+  }
+
+  &.lg {
+    height: 150px;
+  }
+}
+
+.checkbox-content {
+  margin-bottom: spaces.$lg;
+}
+.radio-button-input {
+  margin-bottom: spaces.$sm;
+}
+
+//checkbox 
+.checkbox-content, .radio-button-content {
+  display: grid;
+  grid-template-columns: 40px auto;
+  height: 40px;
+
+  label {
+    display: inline-block;
+    position: relative;
+    top: 14px;
+    margin-right: 10px;
+    width: 80px;
+    font-weight: fonts.$normal;
+    font-size: fonts.$paragraph;
+
+    &.sm {
+      width: 100%;
+      max-width: 100%;
+      font-size: fonts.$sm;
+    }
+  }
+
+  .checkbox, .radio-button {
+    width: 30px;
+    margin-right: 10px;
+    accent-color: colors.$pink;
+  }
+}
+
+
+
+// input {
+//   border-radius: 50px;
+//   padding: 20px 30px;
+//   width: 120px;
+//   background-color: transparent;
+//   border: 2px solid colors.$silver;
+//   color: colors.$darkGreen;
+//   font-weight: fonts.$bold;
+//   cursor: pointer;
+//   text-align: center;
+
+//   &:focus {
+//     outline-color: colors.$darkGreen;
+//   }
+// }

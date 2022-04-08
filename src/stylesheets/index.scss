@@ -393,7 +393,7 @@ a {
 .selected-dog {
   .grid-container {
     display: grid;
-    grid-template-columns: 40px auto;
+    grid-template-columns: 30px auto;
   }
 
   .grid-item figure {
@@ -419,7 +419,8 @@ a {
 .about-adoption,
 .our-business,
 .selected-dog,
-.find-match {
+.find-match,
+.registration-of-interest {
   .border {
     border-color: colors.$primary !important;
     margin: spaces.$extraSm 0 spaces.$md 0;
@@ -458,6 +459,13 @@ a {
 
   .pink {
     color: colors.$pink;
+    border-bottom: 2px solid transparent;
+    font-weight: fonts.$bold;
+    cursor: pointer;
+    
+    &:hover {
+      border-bottom: 2px solid colors.$pink;
+    }
   }
 }
 
@@ -524,5 +532,18 @@ a {
   .description {
     max-width: 700px;
     margin: 0 auto;
+  }
+}
+
+
+// regsitration of interest 
+.registration-of-interest {
+  .registration-of-interest-form {
+    background-color: colors.$bg-primary;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 48% 4% 48%;
   }
 }

@@ -1,7 +1,6 @@
 // import libaries
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Aos from "aos";
 
 //import components
 import Nav from "./components/navigation/navbar";
@@ -12,6 +11,7 @@ import Footer from "./components/footer/footer";
 import LandingPage from "./pages/home/landing-page";
 import FindMatch from "./pages/adoption/find-match";
 import AvailableDogs from "./pages/adoption/available-dogs";
+import RegistrationOfInterest from "./pages/adoption/registration-of-interest";
 import MatchedDogs from "./pages/adoption/matched-dogs";
 import SelectedDog from "./pages/adoption/selected-dog";
 import AboutAdoption from "./pages/adoption/about-adoption";
@@ -21,38 +21,34 @@ function App() {
   // show or hide sidebar
   const [sidebar, setSidebar] = useState(false);
 
-  useEffect(() => {
-    Aos.init({
-      duration: 600,
-      easing: "ease-out",
-      anchorPlacement: "top-bottom",
-    });
-  }, []);
-
   return (
     <div className="App">
       <Router>
         <Nav sidebar={sidebar} setSidebar={setSidebar} />
-        <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
+        <Sidebar sidebar={sidebar} setSidebar={setSidebar}/>
         <div className="content-wrap">
           <Routes>
-            <Route exact path="/pawpatrol" element={<LandingPage />}></Route>
-            <Route path="/pawpatrol/hitta-min-match" element={<FindMatch />}></Route>
+            <Route exact path="/" element={<LandingPage />}></Route>
+            <Route path="/hitta-min-match" element={<FindMatch />}></Route>
             <Route
-              path="/pawpatrol/hitta-min-match/matchningar"
+              path="/hitta-min-match/matchningar"
               element={<MatchedDogs />}
             ></Route>
             <Route
-              path="/pawpatrol/tillgangliga-hundar"
+              path="/intresseanmalan/:name"
+              element={<RegistrationOfInterest />}
+            ></Route>
+            <Route
+              path="/tillgangliga-hundar"
               element={<AvailableDogs />}
             ></Route>
             <Route
-              path="/pawpatrol/tillgangliga-hundar/:name"
+              path="/tillgangliga-hundar/:name"
               element={<SelectedDog />}
             ></Route>
-            <Route path="/pawpatrol/att-adoptera" element={<AboutAdoption />}></Route>
-            <Route path="/pawpatrol/var-verksamhet" element={<OurBusiness />}></Route>
-            <Route path="/pawpatrol/stod-oss" element={<LandingPage />}></Route>
+            <Route path="/att-adoptera" element={<AboutAdoption />}></Route>
+            <Route path="/var-verksamhet" element={<OurBusiness />}></Route>
+            <Route path="/stod-oss" element={<LandingPage />}></Route>
           </Routes>
         </div>
         <Footer />

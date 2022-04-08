@@ -6,6 +6,16 @@
     display: inline-block;
   }
 
+  .navbar-brand {
+    figure {
+      width:150px;
+      position: relative;
+      top: 10px;
+    }
+  }
+
+  
+
   li {
     margin-right: 40px;
     display: inline-block;

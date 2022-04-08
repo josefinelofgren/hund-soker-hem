@@ -35,7 +35,8 @@ function LandingPage() {
               <h3>{t("intro-title")}</h3>
               <p>{t("intro-text")}</p>
             </Col>
-            <Col md="4">Logo</Col>
+            <Col md="4">
+            </Col>
           </Row>
         </Container>
       </div>

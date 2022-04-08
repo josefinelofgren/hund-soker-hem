@@ -1,5 +1,5 @@
 // import libaries
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 //import components
@@ -10,6 +10,11 @@ import { setMatchingFilter } from "../../redux/actions";
 
 function FindMatch() {
   const { t } = useTranslation("translation", { keyPrefix: "find-match" });
+
+  // scroll to top when routing
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  },[]);
 
   const [kids, setKids] = useState(JSON.parse(localStorage.getItem("kids")));
   const [stateQuestion1, setStateQuestion1] = useState(
@@ -68,6 +73,7 @@ function FindMatch() {
             <div className="grid-container">
               <div className="option" onClick={() => handleKids(false)}>
                 <button
+                  id="question-1-option-1"
                   className={
                     stateQuestion1 === false
                       ? `input-btn is-active`
@@ -80,6 +86,7 @@ function FindMatch() {
               </div>
               <div className="option" onClick={() => handleKids(true)}>
                 <button
+                  id="question-1-option-2"
                   className={
                     stateQuestion1 === true
                       ? `input-btn is-active`
@@ -97,6 +104,7 @@ function FindMatch() {
             <div className="grid-container">
               <div className="option">
                 <button
+                  id="question-2-option-1"
                   onClick={() => {
                     setStateQuestion2("Barn i alla åldrar");
                     localStorage.setItem("question2", "Barn i alla åldrar");
@@ -113,6 +121,7 @@ function FindMatch() {
               </div>
               <div className="option">
                 <button
+                  id="question-2-option-2"
                   onClick={() => {
                     setStateQuestion2("Barn från 7 år");
                     localStorage.setItem("question2", "Barn från 7 år");
@@ -129,6 +138,7 @@ function FindMatch() {
               </div>
               <div className="option">
                 <button
+                  id="question-2-option-3"
                   onClick={() => {
                     setStateQuestion2("Barn från 12 år");
                     localStorage.setItem("question2", "Barn från 12 år");
@@ -150,6 +160,7 @@ function FindMatch() {
             <div className="grid-container">
               <div className="option">
                 <button
+                  id="question-3-option-1"
                   onClick={() => {
                     setStateQuestion3("Nej");
                     localStorage.setItem("question3", "Nej");
@@ -166,6 +177,7 @@ function FindMatch() {
               </div>
               <div className="option">
                 <button
+                  id="question-3-option-2"
                   onClick={() => {
                     setStateQuestion3("Tikar");
                     localStorage.setItem("question3", "Tikar");
@@ -182,6 +194,7 @@ function FindMatch() {
               </div>
               <div className="option">
                 <button
+                  id="question-3-option-3"
                   onClick={() => {
                     setStateQuestion3("Hanar");
                     localStorage.setItem("question3", "Hanar");
@@ -198,6 +211,7 @@ function FindMatch() {
               </div>
               <div className="option">
                 <button
+                  id="question-3-option-4"
                   onClick={() => {
                     setStateQuestion3("Ja");
                     localStorage.setItem("question3", "Ja");
@@ -219,6 +233,7 @@ function FindMatch() {
             <div className="grid-container">
               <div className="option">
                 <button
+                  id="question-4-option-1"
                   onClick={() => {
                     setStateQuestion4(false);
                     localStorage.setItem("question4", false);
@@ -235,6 +250,7 @@ function FindMatch() {
               </div>
               <div className="option">
                 <button
+                  id="question-4-option-2"
                   onClick={() => {
                     setStateQuestion4(true);
                     localStorage.setItem("question4", true);
@@ -256,6 +272,7 @@ function FindMatch() {
             <div className="grid-container">
               <div className="option">
                 <button
+                  id="question-5-option-1"
                   onClick={() => {
                     setStateQuestion5("Låg");
                     localStorage.setItem("question5", "Låg");
@@ -272,6 +289,7 @@ function FindMatch() {
               </div>
               <div className="option">
                 <button
+                  id="question-5-option-2"
                   onClick={() => {
                     setStateQuestion5("Medium");
                     localStorage.setItem("question5", "Medium");
@@ -288,6 +306,7 @@ function FindMatch() {
               </div>
               <div className="option">
                 <button
+                  id="question-5-option-3"
                   onClick={() => {
                     setStateQuestion5("Hög");
                     localStorage.setItem("question5", "Hög");
@@ -305,7 +324,7 @@ function FindMatch() {
             </div>
           </div>
           <br />
-          <div onClick={() => handleSubmit()}>
+          <div className="submit" onClick={() => handleSubmit()}>
             <Button
               label={"Spara och hitta min match"}
               color={"primary"}

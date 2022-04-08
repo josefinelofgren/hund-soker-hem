@@ -5,12 +5,13 @@ import { Link } from "react-router-dom";
 //import components
 import heart from "../../assets/svg/heart-icon.svg";
 
-function Button({ label, size, color, path, disabled }) {
+function Button({ label, size, color, path, disabled, handleSubmit }) {
   return (
     <Link to={`${path}`}>
       <button
         className={disabled ? `disabled ${size} ${color}` : `${size} ${color}`}
         type="submit"
+        onClick={() => handleSubmit()}
       >
         <div className="content">
           <figure className={disabled ? "disabled" : ""}>

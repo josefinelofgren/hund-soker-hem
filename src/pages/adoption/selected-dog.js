@@ -73,7 +73,7 @@ function SelectedDog() {
                           <figure>
                             <img
                               src={
-                                require("../../assets/svg/icon-dog.svg").default
+                                require("../../assets/svg/icon-paw.svg").default
                               }
                               alt="Icon dog"
                             />
@@ -87,10 +87,9 @@ function SelectedDog() {
                       <div className="grid-container">
                         <div className="grid-item sm">
                           <figure>
-                            <img
+                          <img
                               src={
-                                require("../../assets/svg/icon-balloon.svg")
-                                  .default
+                                require("../../assets/svg/icon-paw.svg").default
                               }
                               alt="Icon dog"
                             />
@@ -106,7 +105,7 @@ function SelectedDog() {
                           <figure>
                             <img
                               src={
-                                require("../../assets/svg/icon-dog.svg").default
+                                require("../../assets/svg/icon-paw.svg").default
                               }
                               alt="Icon dog"
                             />
@@ -122,7 +121,7 @@ function SelectedDog() {
                           <figure>
                             <img
                               src={
-                                require("../../assets/svg/icon-dog.svg").default
+                                require("../../assets/svg/icon-paw.svg").default
                               }
                               alt="Icon dog"
                             />
@@ -138,7 +137,7 @@ function SelectedDog() {
                           <figure>
                             <img
                               src={
-                                require("../../assets/svg/icon-dog.svg").default
+                                require("../../assets/svg/icon-paw.svg").default
                               }
                               alt="Icon dog"
                             />
@@ -156,7 +155,7 @@ function SelectedDog() {
                           <figure>
                             <img
                               src={
-                                require("../../assets/svg/icon-dog.svg").default
+                                require("../../assets/svg/icon-paw.svg").default
                               }
                               alt="Icon dog"
                             />
@@ -172,7 +171,7 @@ function SelectedDog() {
                           <figure>
                             <img
                               src={
-                                require("../../assets/svg/icon-dog.svg").default
+                                require("../../assets/svg/icon-paw.svg").default
                               }
                               alt="Icon dog"
                             />
@@ -188,7 +187,7 @@ function SelectedDog() {
                           <figure>
                             <img
                               src={
-                                require("../../assets/svg/icon-dog.svg").default
+                                require("../../assets/svg/icon-paw.svg").default
                               }
                               alt="Icon dog"
                             />
@@ -202,10 +201,9 @@ function SelectedDog() {
                       <div className="grid-container">
                         <div className="grid-item sm">
                           <figure>
-                            <img
+                          <img
                               src={
-                                require("../../assets/svg/icon-dog2.svg")
-                                  .default
+                                require("../../assets/svg/icon-paw.svg").default
                               }
                               alt="Icon dog"
                             />
@@ -221,7 +219,7 @@ function SelectedDog() {
                           <figure>
                             <img
                               src={
-                                require("../../assets/svg/icon-dog.svg").default
+                                require("../../assets/svg/icon-paw.svg").default
                               }
                               alt="Icon dog"
                             />
@@ -252,6 +250,7 @@ function SelectedDog() {
                 label={`Jag vill träffa ${selectedDog.name}`}
                 color={"primary"}
                 disabled={true}
+                path={`/intresseanmalan/${path}`}
               />
             </Col>
             <Col lg="6">

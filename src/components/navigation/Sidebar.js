@@ -1,5 +1,6 @@
 // import libaries
 import React from "react";
+import onClickOutside from "react-onclickoutside";
 
 //import components
 import { Link } from "react-router-dom";
@@ -7,10 +8,19 @@ import facebook from "../../assets/svg/facebook-icon.svg";
 import instagram from "../../assets/svg/instagram-icon.svg";
 
 function Sidebar({ sidebar, setSidebar }) {
+
+  Sidebar.handleClickOutside = () => {
+    setSidebar(false);
+  };
+
   const links = [
     {
       label: "Hundarna",
       path: "/tillgangliga-hundar",
+    },
+    {
+      label: "Att adoptera",
+      path: "/att-adoptera",
     },
     {
       label: "Vår verksamhet",
@@ -83,4 +93,8 @@ function Sidebar({ sidebar, setSidebar }) {
   );
 }
 
-export default Sidebar;
+const clickOutsideConfig = {
+  handleClickOutside: () => Sidebar.handleClickOutside,
+};
+
+export default onClickOutside(Sidebar, clickOutsideConfig );

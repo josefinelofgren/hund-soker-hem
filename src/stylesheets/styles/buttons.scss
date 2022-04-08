@@ -2,7 +2,7 @@
 @use "./fonts.scss";
 @use "./spaces.scss";
 
-button {
+button, .button {
   border-radius: 50px;
   border: none;
   padding: 10px 20px;
@@ -12,6 +12,11 @@ button {
 
   &.disabled {
     padding: 20px 20px;
+  }
+
+  // button with no icon 
+  &.no-icon {
+    padding: 15px 20px;
   }
 
   // input buttons
@@ -92,3 +97,4 @@ button {
     }
   }
 }
+

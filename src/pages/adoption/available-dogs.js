@@ -1,5 +1,5 @@
 // import libaries
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import * as Scroll from "react-scroll";
@@ -16,6 +16,11 @@ function AvailableDogs() {
   const { t } = useTranslation("translation", { keyPrefix: "available-dogs" });
   const [dogs, setDogs] = useState([]);
   const LinkScroll = Scroll.Link;
+
+  // scroll to top when routing
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   useEffect(() => {
     fetch(available_dogs_URI)
@@ -36,7 +41,11 @@ function AvailableDogs() {
           <p>{t("text-two")}</p>
           <h5>{t("subtitle-one")}</h5>
           <p>{t("text-one")}</p>
-          <Button label={t("find-match")} color={"primary"} />
+          <Button
+            label={t("find-match")}
+            color={"primary"}
+            path={"/hitta-min-match"}
+          />
         </Container>
       </div>
       <div id="dogs" className="dogs">
