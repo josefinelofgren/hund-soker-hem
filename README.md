@@ -1,5 +1,5 @@
 # Paw Patrol
-This app uses mongoDB Atlas as a database. The application is deployed at Github Pages. The back end is deployed at Heroku and you will find the back end application [https://github.com/josefinelofgren/pawpatrol-backend](https://github.com/josefinelofgren/pawpatrol-backend).
+This app uses mongoDB Atlas as a database. The application is deployed at Github Pages. The back end is deployed at Heroku and you will find the back end application [here](https://github.com/josefinelofgren/pawpatrol-backend).
 
 ## Run app live 
 
