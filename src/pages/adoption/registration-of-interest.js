@@ -199,9 +199,9 @@ function RegistrationOfInterest() {
                   name: selectedDog.name,
                 })}
                 <Link to="/hitta-min-match">
-                  <span className="pink"> matchningsquiz</span>
+                  <span className="pink"> matchningsformulär</span>
                 </Link>
-                , där vi presenterar de hundar som eventuellt skulle kunna passa
+                , där vi sedan presenterar de hundar som eventuellt skulle kunna passa
                 in hos dig baserat på dina svar.
               </p>
               <h6>{t("registration-of-interest-info-subtitle")}</h6>

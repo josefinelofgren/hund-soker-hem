@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 //import components
 import { Container, Row, Col } from "react-bootstrap";
-import Sponsors from "../../components/sponsors/sponsors";
+import DonationForm from "../../components/forms/donation-form";
 import Button from "../../components/buttons/button";
 import Header from "../../components/header/header";
 import AdoptionProcess from "../../components/adoption-process/adoption-process";
@@ -36,6 +36,12 @@ function LandingPage() {
               <p>{t("intro-text")}</p>
             </Col>
             <Col md="4">
+            <figure>
+              <img
+                src={require("../../assets/svg/home-icon.svg").default}
+                alt="Icon dog"
+              />
+            </figure>
             </Col>
           </Row>
         </Container>
@@ -100,30 +106,14 @@ function LandingPage() {
           )}
         </Container>
       </div>
-      {/* <div className='monthly-donor'>
+      <div className='monthly-donor'>
         <Container fluid>
             <h3>{t('monthly-donor-title')}</h3>
             <p className='text'>{t('monthly-donor-text')}</p>
             <h6>{t('monthly-donor-subtitle')}</h6>
-            <InputButton currentState={'option-1'} label={t('monthly-donor-option-one')} /> 
-            <InputButton currentState={'option-2'} label={t('monthly-donor-option-two')} /> 
-            <InputButton currentState={'option-3'} label={t('monthly-donor-option-three')} /> 
-            <br />
-            <p className='inline'>{t('monthly-donor-option-text')}</p>
-            <Form>
-              <InputNumber />
-              <p className='inline'>{t('monthly-donor-currency')}</p>
-              <br /><br />
-              <Button label={t('monthly-donor-btn')} color={'primary'} /> 
-            </Form> 
+            <DonationForm /> 
         </Container>
-    </div> */}
-      <div className="sponsors">
-        <Container fluid>
-          <h3>{t("sponsors-title")}</h3>
-          <Sponsors />
-        </Container>
-      </div>
+    </div>
     </>
   );
 }

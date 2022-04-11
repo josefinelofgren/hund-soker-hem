@@ -37,24 +37,31 @@ function OurBusiness() {
                       {t("description-part-one")} <span>{t("bold")}</span>{" "}
                       {t("description-part-two")}
                     </p>
-                    <h5>{t("subtitle")}</h5>
-                    <p>
-                      {t("text-part-one")}{" "}
-                      <span className="pink">{t("bold-part-one")}</span>{" "}
-                      {t("text-part-two")}{" "}
-                      <span className="pink">{t("bold-part-two")}</span>{" "}
-                      {t("text-part-three")}{" "}
-                      <span className="pink">{t("email")}</span>
-                    </p>
-                    <p>{t("text-part-four")}</p>
-                    <Button label={t("monthly-donor-btn")} color={"primary"} />
+                    <p>{t("description-part-three")}</p>
                   </Row>
-                  <Row></Row>
                 </Container>
               </div>
             </Col>
           </Row>
         </div>
+        <Container fluid>
+          <Row>
+            <h4>{t("subtitle")}</h4>
+            <p>
+              {t("text-part-one")}{" "}
+              <span className="pink">{t("bold-part-one")}</span>{" "}
+              {t("text-part-two")}{" "}
+              <span className="pink">{t("bold-part-two")}</span>{" "}
+              {t("text-part-three")} <span className="pink">{t("email")}</span>
+            </p>
+            <p>{t("text-part-four")}</p>
+            <Button
+              label={t("monthly-donor-btn")}
+              color={"primary"}
+              path={"/bli-manadsgivare"}
+            />
+          </Row>
+        </Container>
       </div>
     </div>
   );

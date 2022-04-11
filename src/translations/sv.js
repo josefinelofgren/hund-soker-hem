@@ -24,7 +24,7 @@ const translation = {
     "adoption-process-step-three-title": "Livslång vägledning",
     "adoption-process-step-three-text": `Om du blir godkänd på vårt hembesök och allting klickar och känns rätt så godkänns adoptionen. Varje hund är unik med unika behov och behöver ett hem som kan uppfylla dessa behov och ge den ett rikt liv. Att adoptera en hund som haft en tuff start i livet är sällan enkelt. 
         
-        Vi på Paw Patrol vill att både du och hunden ska känna er trygga och säkra tillsammans och erbjuder er därför en livslång vägledning. Våra utbildade hundinstruktörer, hundpsykologer och veterinär hjälper till att guida er genom olika faser och beteenden om det skulle behövas. 
+        Vi på Hund Söker Hem vill att både du och hunden ska känna er trygga och säkra tillsammans och erbjuder er därför en livslång vägledning. Våra utbildade hundinstruktörer, hundpsykologer och veterinär hjälper till att guida er genom olika faser och beteenden om det skulle behövas. 
         
         Vi gör allt i vår makt för att adoptionen ska bli så lyckad som möjligt, men det krävs ett stort engagemant och vilja även från din sida.`,
     "adoption-process-btn": "Hitta min match",
@@ -42,7 +42,7 @@ const translation = {
     "support-us-title": "Stöd vårt arbete",
     "support-us-text":
       "Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.",
-    "support-us-btn": "Skänk en gåva",
+    "support-us-btn": "Bli månadsgivare",
 
     "monthly-donor-title":
       "Hjälp oss att fortsätta vårt arbete, bli månadsgivare",
@@ -66,7 +66,7 @@ const translation = {
     "subtitle-two": "Är du redo för att adoptera?",
     "find-match": "Hitta min match",
     "text-two":
-      "Vi på Paw Patrol är väldigt måna om att de hundar som adopteras kommer till sitt föralltidhem. Många av hundarna har haft en tuff start i livet där de kanske inte fått den stabilitet, trygghet och kärlek de behövt. Därför är det viktigt att du som vill adoptera har tänkt igenom ditt beslut noggrant, att du är väl medveten om vad det innebär och att du vet om att du har den tid och energi som krävs. Vi har samlat bra och viktig information till dig som funderar på att adoptera, läs gärna igenom den innan du skickar in en intresseanmälan för en hund.",
+      "Vi på Hund Söker Hem är väldigt måna om att de hundar som adopteras kommer till sitt föralltidhem. Många av hundarna har haft en tuff start i livet där de kanske inte fått den stabilitet, trygghet och kärlek de behövt. Därför är det viktigt att du som vill adoptera har tänkt igenom ditt beslut noggrant, att du är väl medveten om vad det innebär och att du vet om att du har den tid och energi som krävs. Vi har samlat bra och viktig information till dig som funderar på att adoptera, läs gärna igenom den innan du skickar in en intresseanmälan för en hund.",
     "available-dogs-title": "Vi söker nytt hem",
     filter: "Filtrera",
   },
@@ -104,11 +104,13 @@ const translation = {
       "Har du läst igenom all viktig information, besvarat de frågor vi nämner här ovan och kommit fram till att du är redo för att ta dig an det ansvar en adoption skulle innebära?",
   },
   "our-business": {
-    title: "Vi på Paw Patrol",
+    title: "Vi på Hund Söker Hem",
     "description-part-one":
-      "Paw Patrol är en ideell förening som bildades 2022 med ett mål ",
+      "Hund Söker Hem är en ideell förening som bildades 2022 med ett mål ",
     bold: "- att ge hundar en andra chans till det liv dem förtjänar att leva,",
     "description-part-two": `i ett tryggt och kärleksfullt hem. Sen vi startade har vi räddat tusentals hundar och hjälpt dem att hitta till sina nya föreviga hem`,
+    "description-part-three":
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare risus leo. Integer blandit iaculis ex, id feugiat dui interdum quis. Mauris cursus magna eu leo sagittis viverra. Ut suscipit blandit nisi, in viverra nibh congue in. Maecenas neque sem, sagittis et malesuada quis, mattis aliquam nulla.",
     subtitle: "Vill du vara med oss i arbetet om att rädda fler hundar?",
     "text-part-one": "Vi söker alltid efter",
     "bold-part-one": "volontärer",
@@ -116,18 +118,18 @@ const translation = {
     "bold-part-two": "jourhem",
     "text-part-three":
       " för de hundar som inte mår bra i sheltermiljön. Ibland anställer vi även nya hundpsykologer, hundtränare och veterinärer. Håll utkik efter annonser eller skicka iväg ett mejl till oss på ",
-    email: "jobb@pawpatrol.se",
+    email: "jobb@hundsokerhem.se",
     "text-part-four":
       "Har du inte möjlighet att jobba tillsammans med oss men vill hjälpa till på annat sätt? Vår verksamhet är beroende av frivilligt stöd för att kunna hjälpa alla hundar. Det är månadsgivare, medlemmar och sponsorer som gör det möjligt för oss att rädda och hjälpa utsatta hundar.",
     "monthly-donor-btn": "Bli månadsgivare",
   },
   footer: {
-    "company-title": "Paw Patrol",
+    "company-title": "Hund Söker Hem",
     "company-description":
       "Lorem ipsum dolor sit amet, consectetur adipiscing.Phasellus eget convallis lectus. Sed mollis viverra. Suspendisse id lorem diam. Lorem ipsum dolor sit amet.",
 
     "contact-title": "Kontakt",
-    "contact-company": "Paw Patrol",
+    "contact-company": "Hund Söker Hem",
     "contact-name": "c/o Josefine Löfgren",
     "contact-address": "Örby Slottsväg 46",
     "contact-zipcode": "125 71 Älsvjö",
@@ -140,7 +142,7 @@ const translation = {
     "social-media-title": "Följ oss",
 
     "copyright-name": "Ansvarig utgivare: Josefine Löfgren",
-    "copyright-company": "© 2022 Paw Patrol",
+    "copyright-company": "© 2022 Hund Söker Hem",
   },
   "find-match": {
     title: "Möt din match",
@@ -173,25 +175,58 @@ const translation = {
     "subtitle-two": "Är du redo för att adoptera?",
     "find-match": "Hitta min match",
     "text-two":
-      "Vi på Paw Patrol är väldigt måna om att de hundar som adopteras kommer till sitt föralltidhem. Många av hundarna har haft en tuff start i livet där de kanske inte fått den stabilitet, trygghet och kärlek de behövt. Därför är det viktigt att du som vill adoptera har tänkt igenom ditt beslut noggrant, att du är väl medveten om vad det innebär och att du vet om att du har den tid och energi som krävs. Vi har samlat bra och viktig information till dig som funderar på att adoptera, läs gärna igenom den innan du skickar in en intresseanmälan för en hund.",
+      "Vi på Hund Söker Hem är väldigt måna om att de hundar som adopteras kommer till sitt föralltidhem. Många av hundarna har haft en tuff start i livet där de kanske inte fått den stabilitet, trygghet och kärlek de behövt. Därför är det viktigt att du som vill adoptera har tänkt igenom ditt beslut noggrant, att du är väl medveten om vad det innebär och att du vet om att du har den tid och energi som krävs. Vi har samlat bra och viktig information till dig som funderar på att adoptera, läs gärna igenom den innan du skickar in en intresseanmälan för en hund.",
     "matched-dogs-title": "Dina matchningar",
     filter: "Filtrera",
   },
   "registration-of-interest": {
-    title: 'Intresseanmälan',
-    description: "Vi får många intresseanmälningar varje dag. Genom att läsa och följa instruktionerna noga hjälper du oss att jobba effektivt i jakten på ett kärleksfullt och passande hem till varje hund.",
-    'subtitle': 'Har du tänkt igenom ditt beslut noga?',
-    'sub-description': 'Att adoptera en hund är ett stort beslut. När en hund byter hem är det en omvälvande omställning. Det är viktigt att du kan och vill anpassa dig efter din nya familjemedlem och erbjuda en lugn och trygg hemmiljö med mycket tid och kärlek. Under fliken',
-    'registration-of-interest-info-title': 'Intresseanmälan för {{name}}',
-    'registration-of-interest-info-description': "Vad kul att du är intresserad av att bli {{name}}'s föralltid hem. Vi uppskattar att du tar dig tid att noga läsa igenom hundens presentation och att du väljer en hund som passar dig och din livsstil- och situation. Om du är osäker på vilka hundar som kan passa dig så kan du göra vårt",
-    'registration-of-interest-info-subtitle': 'Hur går det till?',
-    'registration-of-interest-info-sub-description': 'När en hund söker nytt hem är det inte först till kvarn som gäller, det går heller inte att boka en hund genom din intressenamälan. Vi väljer det hem som vi tror skulle passa bäst för varje hund.  Om du går vidare i processen kommer vi att boka in ett första möte tillsammans med dig där du och {{name}} får chans att träffa varandra.',
-    'registration-of-interest-info-subtitle-two': 'Ett första intryck',
-    'registration-of-interest-info-sub-description-two': 'Din intresseanmälan är vårt första intryck av dig. Vi värdesätter därför att du är uppriktig och personlig i dina svar. Vårt mål är att de hundar vi hittar nya hem åt ska komma till sitt föralltid hem, därför är det viktigt att du utförligt beskriver din hur en vardag hos och tillsammans med dig kommer att se ut så att vi kan avgöra om {{name}} skulle passa in och fungera i den miljön.',
-    'registration-of-interest-form-title': 'Formulär för intresseanmälan',
-    'title-registration-sent': 'Tack för din intresseanmälan till {{name}}',
-    'description-registration-sent-part-one': 'Vi bearbetar de intresseanmälningar som kommer in så fort vi kan. Beräknad tid för återkoppling sker vanligtvis inom en vecka. Vi kommer att ta kontakt med dig oavsett om vi väljer att gå vidare med din intresseanmälan för {{name}} eller ej',
-    'description-registration-sent-part-two': 'Vissa hundar får betydligt fler intresseanmälningar än andra, exempelvis valpar. Idag har vi många hundar som behöver ett nytt hem och kanske tycker vi att du skulle matcha bätte med någon av de andra, då meddelar vi dig det i samband med återkopplingen.'
+    title: "Intresseanmälan",
+    description:
+      "Vi får många intresseanmälningar varje dag. Genom att läsa och följa instruktionerna noga hjälper du oss att jobba effektivt i jakten på ett kärleksfullt och passande hem till varje hund.",
+    subtitle: "Har du tänkt igenom ditt beslut noga?",
+    "sub-description":
+      "Att adoptera en hund är ett stort beslut. När en hund byter hem är det en omvälvande omställning. Det är viktigt att du kan och vill anpassa dig efter din nya familjemedlem och erbjuda en lugn och trygg hemmiljö med mycket tid och kärlek. Under fliken",
+    "registration-of-interest-info-title": "Intresseanmälan för {{name}}",
+    "registration-of-interest-info-description":
+      "Vad kul att du är intresserad av att bli {{name}}'s föralltid hem. Vi uppskattar att du tar dig tid att noga läsa igenom hundens presentation och att du väljer en hund som passar dig och din livsstil- och situation. Om du är osäker på vilka hundar som kan passa dig så kan du fylla i vårt",
+    "registration-of-interest-info-subtitle": "Hur går det till?",
+    "registration-of-interest-info-sub-description":
+      "När en hund söker nytt hem är det inte först till kvarn som gäller, det går heller inte att boka en hund genom din intressenamälan. Vi väljer det hem som vi tror skulle passa bäst för varje hund.  Om du går vidare i processen kommer vi att boka in ett första möte tillsammans med dig där du och {{name}} får chans att träffa varandra.",
+    "registration-of-interest-info-subtitle-two": "Ett första intryck",
+    "registration-of-interest-info-sub-description-two":
+      "Din intresseanmälan är vårt första intryck av dig. Vi värdesätter därför att du är uppriktig och personlig i dina svar. Vårt mål är att de hundar vi hittar nya hem åt ska komma till sitt föralltid hem, därför är det viktigt att du utförligt beskriver din hur en vardag hos och tillsammans med dig kommer att se ut så att vi kan avgöra om {{name}} skulle passa in och fungera i den miljön.",
+    "registration-of-interest-form-title": "Formulär för intresseanmälan",
+    "title-registration-sent": "Tack för din intresseanmälan till {{name}}",
+    "description-registration-sent-part-one":
+      "Vi bearbetar de intresseanmälningar som kommer in så fort vi kan. Beräknad tid för återkoppling sker vanligtvis inom en vecka. Vi kommer att ta kontakt med dig oavsett om vi väljer att gå vidare med din intresseanmälan för {{name}} eller ej",
+    "description-registration-sent-part-two":
+      "Vissa hundar får betydligt fler intresseanmälningar än andra, exempelvis valpar. Idag har vi många hundar som behöver ett nytt hem och kanske tycker vi att du skulle matcha bätte med någon av de andra, då meddelar vi dig det i samband med återkopplingen.",
+  },
+  "monthly-donor": {
+    title: "Hjälp oss att fortsätta vårt arbete, bli månadsgivare",
+    subtitle: "Välkommen som månadsgivare hos oss!",
+    "description-part-one":
+      "Vill du vara med och se till att hemlösa hundar får en andra chans i livet? Ett regelbundet stöd från dig hjälper oss i vårt arbete mot att rädda hundar som inte levt under de bästa förhållandena.",
+      "description-part-two":
+      "Fyll i formuläret nedan och bli månadsgivare redan idag. Ditt stöd gör skillnad!",
+    "sub-description":
+      "Som månadsgivare hos oss på Hund Söker Hem bidrar du till tak över huvudet, foder, veterinärvårdskostnader med mera till våra omplaceringshundar.",
+    "monthly-donor-step-one": "Steg 1 av 3",
+    "monthly-donor-subtitle": "Hur mycket vill du ge per månad?",
+    "monthly-donor-option-one": "50 kr",
+    "monthly-donor-option-two": "100 kr",
+    "monthly-donor-option-three": "200 kr",
+    "monthly-donor-option-text":
+      "... eller ange en valfri summa. Jag vill bidra med",
+    "monthly-donor-currency": "kr / månad",
+    "monthly-donor-btn": "Bli månadsgivare",
+    "monthly-donor-form-title": "Varje månad vill jag skänka...",
+    "heading-one": "Avsluta när du vill",
+    "text-one":
+      "Vi på Hund Söker Hem är tacksamma för varenda liten krona vi får in. Vi vill att du som månadsprenumerant ska kunna välja att bidra till oss när det passar dig och din ekonomi, därför har vi gjort det lätt för dig att pausa eller avbryta din prenumeration när som helst utan någon bindningstid. ",
+  },
+  sponsors: {
+    title: "Sponsorer",
   },
 };
 

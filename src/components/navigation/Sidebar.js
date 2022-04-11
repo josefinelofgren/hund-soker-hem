@@ -27,12 +27,8 @@ function Sidebar({ sidebar, setSidebar }) {
       path: "/var-verksamhet",
     },
     {
-      label: "Stöd oss",
-      path: "/stod-oss",
-    },
-    {
-      label: "Sök",
-      path: "/sok",
+      label: "Bli månadsgivare",
+      path: "/bli-manadsgivare",
     },
   ];
 

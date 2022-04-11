@@ -115,6 +115,18 @@ a {
 // intro
 .intro {
   background-color: colors.$bg-pink;
+
+  figure {
+    max-width: 250px;
+    padding-left: spaces.$lg;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    figure {
+      padding-top: spaces.$md;
+    }
+  }
 }
 
 // adoption process
@@ -258,30 +270,26 @@ a {
 .monthly-donor {
   text-align: center;
 
-  h3,
-  p.text,
-  h6 {
-    margin-bottom: spaces.$md;
+  .donation-form {
+    h6 {
+      text-align: left;
+      color: colors.$green;
+    }
+
+    h5{
+      text-align: left;
+      margin-bottom: spaces.$sm;
+    }
   }
 
-  h6 {
-    color: colors.$darkGreen;
+  .info {
+    text-align: left;
   }
 
-  p.inline {
-    display: inline-block;
-    margin: spaces.$sm;
-  }
-
-  .input-btn,
   input {
     margin: spaces.$extraSm;
   }
 
-  button.primary {
-    display: block;
-    margin: 0 auto;
-  }
 }
 
 // sponsors
@@ -420,7 +428,8 @@ a {
 .our-business,
 .selected-dog,
 .find-match,
-.registration-of-interest {
+.registration-of-interest,
+.monthly-donor {
   .border {
     border-color: colors.$primary !important;
     margin: spaces.$extraSm 0 spaces.$md 0;

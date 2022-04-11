@@ -28,6 +28,8 @@ label {
   padding: 20px;
   height: 50px;
   margin-bottom: spaces.$sm;
+  border: 2px solid colors.$silver;
+  border-radius: 10px;
 
   &:focus {
     outline-color: colors.$pink;
@@ -78,20 +80,44 @@ label {
   }
 }
 
+.donation-form {
+  max-width: 600px;
+  margin: 0 auto;
 
+  .button {
+    display: block;
+    margin: 0 auto;
+    margin-top: spaces.$sm;
+  }
 
-// input {
-//   border-radius: 50px;
-//   padding: 20px 30px;
-//   width: 120px;
-//   background-color: transparent;
-//   border: 2px solid colors.$silver;
-//   color: colors.$darkGreen;
-//   font-weight: fonts.$bold;
-//   cursor: pointer;
-//   text-align: center;
+  .grid-container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
 
-//   &:focus {
-//     outline-color: colors.$darkGreen;
-//   }
-// }
+  .input-button {
+    width: 90%;
+    max-width: 150px;
+    background-color: transparent;
+    border: 2px solid colors.$silver;
+    color: colors.$silver;
+    padding: 20px;
+    font-weight: fonts.$bold;
+    text-align: center;
+    border-radius: 5px;
+
+    &.sm {
+      width: 100px;
+    }
+
+    &:focus, &.is-active {
+      outline-color: colors.$pink;
+      color: colors.$pink;
+      border-color: colors.$pink;
+    }
+  }
+
+  p {
+    display: inline-block;
+  }
+}

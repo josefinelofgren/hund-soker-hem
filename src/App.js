@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./components/navigation/navbar";
 import Sidebar from "./components/navigation/sidebar";
 import Footer from "./components/footer/footer";
+import Sponsors from "./components/sponsors/sponsors";
 
 // import pages
 import LandingPage from "./pages/home/landing-page";
@@ -16,6 +17,7 @@ import MatchedDogs from "./pages/adoption/matched-dogs";
 import SelectedDog from "./pages/adoption/selected-dog";
 import AboutAdoption from "./pages/adoption/about-adoption";
 import OurBusiness from "./pages/business/our-business";
+import MonthlyDonor from "./pages/support/monthly-donor";
 
 function App() {
   // show or hide sidebar
@@ -48,9 +50,10 @@ function App() {
             ></Route>
             <Route path="/att-adoptera" element={<AboutAdoption />}></Route>
             <Route path="/var-verksamhet" element={<OurBusiness />}></Route>
-            <Route path="/stod-oss" element={<LandingPage />}></Route>
+            <Route path="/bli-manadsgivare" element={<MonthlyDonor />}></Route>
           </Routes>
         </div>
+        <Sponsors /> 
         <Footer />
       </Router>
     </div>

@@ -10,7 +10,7 @@ function AboutAdoption() {
   // scroll to top when routing
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  },[]);
+  }, []);
 
   const { t } = useTranslation("translation", { keyPrefix: "about-adoption" });
 
@@ -79,12 +79,17 @@ function AboutAdoption() {
             <div className="article">
               <h4>{t("subtitle-four")}</h4>
               <p>
-                {t("text-four")} Då är du varmt välkommen att göra en{" "} intresseanmälan. 
+                {t("text-four")} Då är du varmt välkommen att göra en{" "}
+                intresseanmälan.
                 <Link to="/hitta-min-match">
                   <span className="pink"> Hitta din match här</span>
                 </Link>{" "}
                 via vårt matchningssystem som tar fram de hundar som matchar dig
-                och din livsstil baserat på ett frågeformulär eller sök bland <Link to="/tillgangliga-hundar"><span className='pink'>alla våra tillgängliga hundar</span></Link>.
+                och din livsstil baserat på ett frågeformulär eller sök bland{" "}
+                <Link to="/tillgangliga-hundar">
+                  <span className="pink">alla våra tillgängliga hundar</span>
+                </Link>
+                .
               </p>
             </div>
           </Row>

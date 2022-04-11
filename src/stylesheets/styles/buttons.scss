@@ -16,7 +16,7 @@ button, .button {
 
   // button with no icon 
   &.no-icon {
-    padding: 15px 20px;
+    padding: 20px 25px;
   }
 
   // input buttons
@@ -25,6 +25,7 @@ button, .button {
     border: 2px solid colors.$silver;
     color: colors.$silver;
     padding: 15px 20px;
+    border-radius: 10px;
 
     &.is-active {
       border: 2px solid colors.$darkGreen;
