@@ -1,5 +1,5 @@
 # Paw Patrol
-This app uses mongoDB Atlas as a database. The application is deployed at XXX. You will find the back end application [here]().
+This app uses mongoDB Atlas as a database. The application is deployed at Github Pages. The back end is deployed at Heroku and you will find the back end application [here](https://github.com/josefinelofgren/pawpatrol-backend).
 
 ## Run app live 
 
@@ -30,10 +30,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Test
 
-#### `npm test`
+The application contains some E2E tests with Cypress. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### `npm run e2e`
+
+Launches the test runner.
 
 ### Build
 
@@ -47,5 +48,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 ### Packages
 - create-react-app
 - react-router-dom
+- react-dom
 - sass
-
+- i18next
+- react-i18next
+- react-scroll
+- redux
