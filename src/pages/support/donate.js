@@ -14,7 +14,7 @@ function Donate() {
   // scroll to top when routing
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  },[]);
+  }, []);
 
   const [kids, setKids] = useState(JSON.parse(localStorage.getItem("kids")));
   const [stateQuestion1, setStateQuestion1] = useState(

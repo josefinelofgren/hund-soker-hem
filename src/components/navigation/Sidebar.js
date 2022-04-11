@@ -8,7 +8,6 @@ import facebook from "../../assets/svg/facebook-icon.svg";
 import instagram from "../../assets/svg/instagram-icon.svg";
 
 function Sidebar({ sidebar, setSidebar }) {
-
   Sidebar.handleClickOutside = () => {
     setSidebar(false);
   };
@@ -93,4 +92,4 @@ const clickOutsideConfig = {
   handleClickOutside: () => Sidebar.handleClickOutside,
 };
 
-export default onClickOutside(Sidebar, clickOutsideConfig );
+export default onClickOutside(Sidebar, clickOutsideConfig);

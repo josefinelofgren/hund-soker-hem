@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <Router>
         <Nav sidebar={sidebar} setSidebar={setSidebar} />
-        <Sidebar sidebar={sidebar} setSidebar={setSidebar}/>
+        <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
         <div className="content-wrap">
           <Routes>
             <Route exact path="/" element={<LandingPage />}></Route>
@@ -53,7 +53,7 @@ function App() {
             <Route path="/bli-manadsgivare" element={<MonthlyDonor />}></Route>
           </Routes>
         </div>
-        <Sponsors /> 
+        <Sponsors />
         <Footer />
       </Router>
     </div>

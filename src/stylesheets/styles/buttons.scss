@@ -2,7 +2,8 @@
 @use "./fonts.scss";
 @use "./spaces.scss";
 
-button, .button {
+button,
+.button {
   border-radius: 50px;
   border: none;
   padding: 10px 20px;
@@ -14,7 +15,7 @@ button, .button {
     padding: 20px 20px;
   }
 
-  // button with no icon 
+  // button with no icon
   &.no-icon {
     padding: 20px 25px;
   }
@@ -98,4 +99,3 @@ button, .button {
     }
   }
 }
-

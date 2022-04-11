@@ -51,8 +51,9 @@ label {
   margin-bottom: spaces.$sm;
 }
 
-//checkbox 
-.checkbox-content, .radio-button-content {
+//checkbox
+.checkbox-content,
+.radio-button-content {
   display: grid;
   grid-template-columns: 40px auto;
   height: 40px;
@@ -73,7 +74,8 @@ label {
     }
   }
 
-  .checkbox, .radio-button {
+  .checkbox,
+  .radio-button {
     width: 30px;
     margin-right: 10px;
     accent-color: colors.$pink;
@@ -110,7 +112,8 @@ label {
       width: 100px;
     }
 
-    &:focus, &.is-active {
+    &:focus,
+    &.is-active {
       outline-color: colors.$pink;
       color: colors.$pink;
       border-color: colors.$pink;

@@ -207,7 +207,7 @@ const translation = {
     subtitle: "Välkommen som månadsgivare hos oss!",
     "description-part-one":
       "Vill du vara med och se till att hemlösa hundar får en andra chans i livet? Ett regelbundet stöd från dig hjälper oss i vårt arbete mot att rädda hundar som inte levt under de bästa förhållandena.",
-      "description-part-two":
+    "description-part-two":
       "Fyll i formuläret nedan och bli månadsgivare redan idag. Ditt stöd gör skillnad!",
     "sub-description":
       "Som månadsgivare hos oss på Hund Söker Hem bidrar du till tak över huvudet, foder, veterinärvårdskostnader med mera till våra omplaceringshundar.",

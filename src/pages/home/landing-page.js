@@ -36,12 +36,12 @@ function LandingPage() {
               <p>{t("intro-text")}</p>
             </Col>
             <Col md="4">
-            <figure>
-              <img
-                src={require("../../assets/svg/home-icon.svg").default}
-                alt="Icon dog"
-              />
-            </figure>
+              <figure>
+                <img
+                  src={require("../../assets/svg/home-icon.svg").default}
+                  alt="Icon dog"
+                />
+              </figure>
             </Col>
           </Row>
         </Container>
@@ -106,14 +106,14 @@ function LandingPage() {
           )}
         </Container>
       </div>
-      <div className='monthly-donor'>
+      <div className="monthly-donor">
         <Container fluid>
-            <h3>{t('monthly-donor-title')}</h3>
-            <p className='text'>{t('monthly-donor-text')}</p>
-            <h6>{t('monthly-donor-subtitle')}</h6>
-            <DonationForm /> 
+          <h3>{t("monthly-donor-title")}</h3>
+          <p className="text">{t("monthly-donor-text")}</p>
+          <h6>{t("monthly-donor-subtitle")}</h6>
+          <DonationForm />
         </Container>
-    </div>
+      </div>
     </>
   );
 }

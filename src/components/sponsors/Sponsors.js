@@ -11,7 +11,7 @@ function Sponsors() {
   return (
     <div className="sponsors">
       <Container fluid>
-      <h3>{t("title")}</h3>
+        <h3>{t("title")}</h3>
         <Row>
           <Col sm="4">
             <figure>
