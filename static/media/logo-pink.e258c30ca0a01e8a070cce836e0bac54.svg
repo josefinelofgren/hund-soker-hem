@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="387.433" height="120.22" viewBox="0 0 387.433 120.22">
+  <g id="Group_27" data-name="Group 27" transform="translate(-1626.848 -1330.59)">
+    <g id="Group_28" data-name="Group 28">
+      <g id="Group_25" data-name="Group 25" transform="translate(1556.848 1276.671)">
+        <g id="Icon_feather-home" data-name="Icon feather-home" transform="translate(72 55.919)">
+          <path id="Path_46" data-name="Path 46" d="M4.5,40.557,52.787,3l48.287,36.405V99.574a10.731,10.731,0,0,1-10.73,10.73H15.23A10.731,10.731,0,0,1,4.5,99.574Z" transform="translate(-4.5 -3)" fill="none" stroke="#db7566" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+          <path id="Path_47" data-name="Path 47" d="M13.5,71.652V18H45.691V71.652" transform="translate(18.691 35.652)" fill="none" stroke="#db7566" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        </g>
+        <path id="Path_49" data-name="Path 49" d="M21.624,0C33.566,0,43.247,9.017,43.247,20.14V44.427c0,11.123-9.681,20.14-21.624,20.14S0,55.55,0,44.427V20.14C0,9.017,9.681,0,21.624,0Z" transform="translate(147.779 109.572)" fill="#fff"/>
+      </g>
+      <g id="Icon_ionic-ios-paw" data-name="Icon ionic-ios-paw" transform="translate(1707.851 1393.523)">
+        <path id="Path_37" data-name="Path 37" d="M22.542,5.625Z" transform="translate(11.609 -1.571)" fill="none" stroke="#db7566" stroke-width="4"/>
+        <path id="Path_38" data-name="Path 38" d="M33.141,11.97a2.857,2.857,0,0,0-1.075-.207h-.039c-1.943.03-4.123,1.894-5.268,4.715-1.371,3.374-.74,6.826,1.421,7.714a2.857,2.857,0,0,0,1.075.207c1.953,0,4.163-1.874,5.317-4.715C35.932,16.311,35.291,12.858,33.141,11.97Z" transform="translate(16.203 2.173)" fill="none" stroke="#db7566" stroke-width="4"/>
+        <path id="Path_39" data-name="Path 39" d="M32.932,23.343c-3.147-4.935-4.505-6.792-8.1-6.792s-4.969,1.868-8.116,6.792c-2.694,4.211-8.139,4.562-9.5,8.139a5.188,5.188,0,0,0-.408,2.06,5.258,5.258,0,0,0,5.252,5.264c3.6,0,8.5-2.717,12.78-2.717S34,38.806,37.6,38.806a5.249,5.249,0,0,0,5.241-5.264,5.194,5.194,0,0,0-.419-2.06C41.059,27.894,35.626,27.554,32.932,23.343Z" transform="translate(2.012 5.093)" fill="none" stroke="#db7566" stroke-width="4"/>
+        <path id="Path_40" data-name="Path 40" d="M15.944,19.561a2.821,2.821,0,0,0,.419-.031c2.452-.356,3.982-3.751,3.426-7.586-.524-3.615-2.714-6.318-5.009-6.318a2.822,2.822,0,0,0-.419.031c-2.452.356-3.982,3.751-3.426,7.586C11.46,16.847,13.65,19.561,15.944,19.561Z" transform="translate(4.67 -5.625)" fill="none" stroke="#db7566" stroke-width="4"/>
+        <path id="Path_41" data-name="Path 41" d="M11.17,24.755c2.367-.928,3.059-4.537,1.556-8.063-1.265-2.97-3.686-4.929-5.826-4.929a3.263,3.263,0,0,0-1.178.217c-2.367.928-3.059,4.537-1.556,8.063,1.265,2.97,3.686,4.929,5.826,4.929A3.263,3.263,0,0,0,11.17,24.755Z" transform="translate(-2.546 0.105)" fill="none" stroke="#db7566" stroke-width="4"/>
+        <path id="Path_42" data-name="Path 42" d="M14.781,19.562a2.822,2.822,0,0,1-.419-.031c-2.452-.356-3.982-3.751-3.426-7.587.524-3.615,2.714-6.319,5.009-6.319a2.821,2.821,0,0,1,.419.031c2.452.356,3.982,3.751,3.426,7.587C19.266,16.848,17.076,19.562,14.781,19.562Z" transform="translate(20.426 -5.625)" fill="none" stroke="#db7566" stroke-width="4"/>
+      </g>
+    </g>
+    <g id="Group_23" data-name="Group 23" transform="translate(1779.281 1355.375)">
+      <text id="Hund" transform="translate(50 43)" fill="#db7566" font-size="41" font-family="Futura-Bold, Futura" font-weight="700"><tspan x="-58.773" y="0">Hund</tspan></text>
+    </g>
+    <g id="Group_24" data-name="Group 24" transform="translate(1777.281 1396.81)">
+      <text id="Söker_Hem" data-name="Söker Hem" transform="translate(115 43)" fill="#db7566" font-size="41" font-family="Futura-Bold, Futura" font-weight="700"><tspan x="-121.708" y="0">Söker Hem</tspan></text>
+    </g>
+  </g>
+</svg>
