@@ -4,9 +4,10 @@ This is a degree project for my education as a Front End Developer at Medieinsti
 The main purpose of this project is to create a dog rescue website with a solution that goes beyond just presenting available dogs. The solution includes encouraging better communication overall and helping people to match them with the right dogs that fits their lifestyle and preferences.
 
 ## Run app live 
-This app is built in React and uses the preprocessor SASS for CSS. The application is deployed at Github Pages. The back end is built in Node.js/Express.js and uses mongoDB Atlas as a database. The back end is hosted at Heroku and you will find the back end application [here](https://github.com/josefinelofgren/pawpatrol-backend).
 
 Visit: [XXX](XXX)
+
+This app is built in React and uses the preprocessor SASS for CSS. The application is deployed at Github Pages. The back end is built in Node.js/Express.js and uses mongoDB Atlas as a database. The back end is hosted at Heroku and you will find the back end application [here](https://github.com/josefinelofgren/pawpatrol-backend).
 
 * [Setup](#setup)
     - [install](#install)
