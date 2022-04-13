@@ -11,7 +11,6 @@ function Button({ label, size, color, path, disabled, handleSubmit }) {
       <button
         className={disabled ? `disabled ${size} ${color}` : `${size} ${color}`}
         type="submit"
-        onClick={() => handleSubmit()}
       >
         <div className="content">
           <figure className={disabled ? "disabled" : ""}>

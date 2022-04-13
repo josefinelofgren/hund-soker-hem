@@ -125,6 +125,7 @@ a {
   @media screen and (max-width: 768px) {
     figure {
       padding-top: spaces.$md;
+      padding-left: 0;
     }
   }
 }
@@ -420,6 +421,12 @@ a {
       margin-bottom: spaces.$sm;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    button {
+      margin-bottom: spaces.$md;
+    }
+  }
 }
 
 // pages
@@ -493,7 +500,7 @@ a {
   .option {
     margin: 0;
     padding: 0;
-    min-width: 200px;
+    min-width: auto;
 
     button {
       width: Calc(100% - spaces.$md);
@@ -527,6 +534,16 @@ a {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: spaces.$extraSm 0 spaces.$lg 0;
+  }
+
+  @media screen and (max-width: 992px) {
+    .grid-container {
+      grid-template-columns: auto auto;
+    }
+
+    .option {
+      margin-bottom: spaces.$extraSm;
+    }
   }
 
   .row.kids {

@@ -59,6 +59,7 @@ function Sidebar({ sidebar, setSidebar }) {
                 key={index}
                 onClick={() => setSidebar(!sidebar)}
                 to={link.path}
+                className={link.label}
               >
                 <li>{link.label}</li>
                 <div className="border"></div>

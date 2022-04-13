@@ -7,7 +7,7 @@ function RadioButton({ value, setState, placeholder, name }) {
   };
 
   return (
-    <div className='radio-button-content'>
+    <div className="radio-button-content">
       <input
         value={value}
         name={name}

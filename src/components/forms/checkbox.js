@@ -7,7 +7,7 @@ function Checkbox({ value, label, setState, checked, placeholder, size }) {
   };
 
   return (
-    <div className='checkbox-content'>
+    <div className="checkbox-content">
       <input
         placeholder={placeholder}
         value={value}

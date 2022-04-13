@@ -14,7 +14,7 @@ function Header() {
       <Container fluid>
         <Row>
           <div className="content">
-            <h1 className='title'>{t("title")}</h1>
+            <h1 className="title">{t("title")}</h1>
             <p>{t("text")}</p>
             <Button
               path={"/hitta-min-match"}

@@ -460,7 +460,7 @@ function RegistrationOfInterest() {
               />
               <input
                 type="submit"
-                value="Bekräfta och skicka in intresseanmälan"
+                value="Skicka intresseanmälan"
                 className="button no-icon primary"
               />
             </form>

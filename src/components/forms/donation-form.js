@@ -1,9 +1,6 @@
 // import libaries
 import React, { useState } from "react";
 
-// import components
-import Button from "../buttons/button";
-
 function DonationForm() {
   const [active, setActive] = useState("");
   const [state, setState] = useState("");

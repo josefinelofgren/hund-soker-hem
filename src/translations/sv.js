@@ -15,7 +15,7 @@ const translation = {
 
         Vi gör alltid en enskild bedömning utöver för varje potentiell adoption. Men matchningssystemet hjälper dig att sålla bort de hundar som troligen inte skulle passa in hos dig på grund av självklara förhållanden, exempelvis att du har mindre barn, önskar en hund med särskild aktivitetsnivå mer mera.`,
     "adoption-process-step-two-number": "2.",
-    "adoption-process-step-two-title": "Boka in ett första möte",
+    "adoption-process-step-two-title": "Ett första möte",
     "adoption-process-step-two-text": `När du hittat en hund som du är intresserad utav anmäler du ditt intresse för specifikt den hunden via intresseformuläret som du hittar på hundens profilsida.
         
         Sedan hör vi av oss och bokar in ett första möte med dig där vi får lära känna dig bättre. Vid första mötet får du träffa den hund du anmält ditt intresse för. Redan vid första mötet brukar man kunna se och känna efter om du och hunden är en bra match.

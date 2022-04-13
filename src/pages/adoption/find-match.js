@@ -14,7 +14,7 @@ function FindMatch() {
   // scroll to top when routing
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
-  },[]);
+  }, []);
 
   const [kids, setKids] = useState(JSON.parse(localStorage.getItem("kids")));
   const [stateQuestion1, setStateQuestion1] = useState(
@@ -35,8 +35,7 @@ function FindMatch() {
 
   const handleSubmit = () => {
     let matchingFilter = {
-      kids: kids,
-      kidsSpecification: stateQuestion2,
+      kids: stateQuestion2,
       dogs: stateQuestion3,
       cats: stateQuestion4,
       activityLevel: stateQuestion5,
@@ -74,6 +73,10 @@ function FindMatch() {
               <div className="option" onClick={() => handleKids(false)}>
                 <button
                   id="question-1-option-1"
+                  onClick={() => {
+                    setStateQuestion2("nej");
+                    localStorage.setItem("question2", "nej");
+                  }}
                   className={
                     stateQuestion1 === false
                       ? `input-btn is-active`
@@ -106,11 +109,11 @@ function FindMatch() {
                 <button
                   id="question-2-option-1"
                   onClick={() => {
-                    setStateQuestion2("Barn i alla åldrar");
-                    localStorage.setItem("question2", "Barn i alla åldrar");
+                    setStateQuestion2("ja");
+                    localStorage.setItem("question2", "ja");
                   }}
                   className={
-                    stateQuestion2 === "Barn i alla åldrar"
+                    stateQuestion2 === "ja"
                       ? `input-btn is-active`
                       : `input-btn`
                   }
@@ -123,11 +126,11 @@ function FindMatch() {
                 <button
                   id="question-2-option-2"
                   onClick={() => {
-                    setStateQuestion2("Barn från 7 år");
-                    localStorage.setItem("question2", "Barn från 7 år");
+                    setStateQuestion2("från 7");
+                    localStorage.setItem("question2", "från 7");
                   }}
                   className={
-                    stateQuestion2 === "Barn från 7 år"
+                    stateQuestion2 === "från 7"
                       ? `input-btn is-active`
                       : `input-btn`
                   }
@@ -140,11 +143,11 @@ function FindMatch() {
                 <button
                   id="question-2-option-3"
                   onClick={() => {
-                    setStateQuestion2("Barn från 12 år");
-                    localStorage.setItem("question2", "Barn från 12 år");
+                    setStateQuestion2("från 12");
+                    localStorage.setItem("question2", "från 12");
                   }}
                   className={
-                    stateQuestion2 === "Barn från 12 år"
+                    stateQuestion2 === "från 12"
                       ? `input-btn is-active`
                       : `input-btn`
                   }
@@ -162,11 +165,11 @@ function FindMatch() {
                 <button
                   id="question-3-option-1"
                   onClick={() => {
-                    setStateQuestion3("Nej");
-                    localStorage.setItem("question3", "Nej");
+                    setStateQuestion3("nej");
+                    localStorage.setItem("question3", "nej");
                   }}
                   className={
-                    stateQuestion3 === "Nej"
+                    stateQuestion3 === "nej"
                       ? `input-btn is-active`
                       : `input-btn`
                   }
@@ -179,11 +182,11 @@ function FindMatch() {
                 <button
                   id="question-3-option-2"
                   onClick={() => {
-                    setStateQuestion3("Tikar");
-                    localStorage.setItem("question3", "Tikar");
+                    setStateQuestion3("tikar");
+                    localStorage.setItem("question3", "tikar");
                   }}
                   className={
-                    stateQuestion3 === "Tikar"
+                    stateQuestion3 === "tikar"
                       ? `input-btn is-active`
                       : `input-btn`
                   }
@@ -196,11 +199,11 @@ function FindMatch() {
                 <button
                   id="question-3-option-3"
                   onClick={() => {
-                    setStateQuestion3("Hanar");
-                    localStorage.setItem("question3", "Hanar");
+                    setStateQuestion3("hanar");
+                    localStorage.setItem("question3", "hanar");
                   }}
                   className={
-                    stateQuestion3 === "Hanar"
+                    stateQuestion3 === "hanar"
                       ? `input-btn is-active`
                       : `input-btn`
                   }
@@ -213,11 +216,11 @@ function FindMatch() {
                 <button
                   id="question-3-option-4"
                   onClick={() => {
-                    setStateQuestion3("Ja");
-                    localStorage.setItem("question3", "Ja");
+                    setStateQuestion3("ja");
+                    localStorage.setItem("question3", "ja");
                   }}
                   className={
-                    stateQuestion3 === "Ja"
+                    stateQuestion3 === "ja"
                       ? `input-btn is-active`
                       : `input-btn`
                   }

@@ -35,8 +35,6 @@ function MatchedDogs() {
       .then((result) => {
         setDogs(result);
       });
-
-    console.log(filter);
   }, []);
 
   return (

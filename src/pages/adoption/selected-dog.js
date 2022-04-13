@@ -87,7 +87,7 @@ function SelectedDog() {
                       <div className="grid-container">
                         <div className="grid-item sm">
                           <figure>
-                          <img
+                            <img
                               src={
                                 require("../../assets/svg/icon-paw.svg").default
                               }
@@ -201,7 +201,7 @@ function SelectedDog() {
                       <div className="grid-container">
                         <div className="grid-item sm">
                           <figure>
-                          <img
+                            <img
                               src={
                                 require("../../assets/svg/icon-paw.svg").default
                               }

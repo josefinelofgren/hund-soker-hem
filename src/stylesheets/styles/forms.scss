@@ -45,8 +45,9 @@ label {
 }
 
 .checkbox-content {
-  margin-bottom: spaces.$lg;
+  margin-bottom: spaces.$md;
 }
+
 .radio-button-input {
   margin-bottom: spaces.$sm;
 }
@@ -56,7 +57,7 @@ label {
 .radio-button-content {
   display: grid;
   grid-template-columns: 40px auto;
-  height: 40px;
+  height: auto;
 
   label {
     display: inline-block;
