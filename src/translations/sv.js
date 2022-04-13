@@ -66,7 +66,7 @@ const translation = {
     "subtitle-two": "Är du redo för att adoptera?",
     "find-match": "Hitta min match",
     "text-two":
-      "Vi på Hund Söker Hem är väldigt måna om att de hundar som adopteras kommer till sitt föralltidhem. Många av hundarna har haft en tuff start i livet där de kanske inte fått den stabilitet, trygghet och kärlek de behövt. Därför är det viktigt att du som vill adoptera har tänkt igenom ditt beslut noggrant, att du är väl medveten om vad det innebär och att du vet om att du har den tid och energi som krävs. Vi har samlat bra och viktig information till dig som funderar på att adoptera, läs gärna igenom den innan du skickar in en intresseanmälan för en hund.",
+      "Vi på Hund Söker Hem är väldigt måna om att de hundar som adopteras kommer till sitt föralltidhem. Många av hundarna har haft en tuff start i livet där de kanske inte fått den stabilitet, trygghet och kärlek de behövt. Därför är det viktigt att du som vill adoptera har tänkt igenom ditt beslut noggrant, att du är väl medveten om vad det innebär och att du vet om att du har den tid och energi som krävs.",
     "available-dogs-title": "Vi söker nytt hem",
     filter: "Filtrera",
   },
@@ -175,8 +175,10 @@ const translation = {
     "subtitle-two": "Är du redo för att adoptera?",
     "find-match": "Hitta min match",
     "text-two":
-      "Vi på Hund Söker Hem är väldigt måna om att de hundar som adopteras kommer till sitt föralltidhem. Många av hundarna har haft en tuff start i livet där de kanske inte fått den stabilitet, trygghet och kärlek de behövt. Därför är det viktigt att du som vill adoptera har tänkt igenom ditt beslut noggrant, att du är väl medveten om vad det innebär och att du vet om att du har den tid och energi som krävs. Vi har samlat bra och viktig information till dig som funderar på att adoptera, läs gärna igenom den innan du skickar in en intresseanmälan för en hund.",
+      "Vi på Hund Söker Hem är väldigt måna om att de hundar som adopteras kommer till sitt föralltidhem. Många av hundarna har haft en tuff start i livet där de kanske inte fått den stabilitet, trygghet och kärlek de behövt. Därför är det viktigt att du som vill adoptera har tänkt igenom ditt beslut noggrant, att du är väl medveten om vad det innebär och att du vet om att du har den tid och energi som krävs.",
     "matched-dogs-title": "Dina matchningar",
+    "matched-dogs-title-no-found": "Tyvärr har vi inga hundar för tillfället som vi tror skulle matcha med dig",
+    "matched-dogs-description-no-found": "Det är viktigt att vi matchar våra hundar med det hem där vi tror och känner att dem skulle trivas och må bra. Många av de hundar vi har trivs inte i stadsmiljö, kan inte bo tillsammans med andra djur eller barn i vissa åldrar pågrund av tidigare omständigheter. Fortsätt att hålla utkik efter din match! Vi räddar nya hundar varje vecka.",
     filter: "Filtrera",
   },
   "registration-of-interest": {

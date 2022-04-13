@@ -9,8 +9,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { store } from "../../redux/store";
 
 // fetch
-const matched_dogs_URI = "http://localhost:8080/available-dogs/matched-dogs";
-// const matched_dogs_URI = 'https://diskrid-server.herokuapp.com/available-dogs/matched-dogs';
+// const matched_dogs_URI = "http://localhost:8080/available-dogs/matched-dogs";
+const matched_dogs_URI =
+  "https://hund-soker-hem.herokuapp.com/available-dogs/matched-dogs";
 
 function MatchedDogs() {
   // scroll to top when routing
@@ -45,12 +46,28 @@ function MatchedDogs() {
           <p>{t("description")}</p>
           <h5>{t("subtitle-two")}</h5>
           <p>{t("text-two")}</p>
+          <p>
+            Vi har samlat bra och viktig information till dig som funderar på
+            att adoptera,{" "}
+            <Link to="/att-adoptera">
+              <span className="pink">här</span>
+            </Link>
+            . Läs gärna igenom den innan du skickar in en intresseanmälan för en
+            hund.
+          </p>
         </Container>
       </div>
       <div id="dogs" className="dogs">
         <Container fluid>
-          <h3 className="title">{t("matched-dogs-title")}</h3>
           <Row>
+            {dogs.length === 0 ? (
+              <>
+                <h3 className="title">{t("matched-dogs-title-no-found")}</h3>
+                <p>{t("matched-dogs-description-no-found")}</p>
+              </>
+            ) : (
+              <h3 className="title">{t("matched-dogs-title")}</h3>
+            )}
             {dogs.map((dog, index) => {
               return (
                 <Col md="6" key={index}>
@@ -69,9 +86,13 @@ function MatchedDogs() {
             })}
           </Row>
           <Row>
-            <LinkScroll to="dogs">
-              <div className="link">Tillbaka till toppen</div>
-            </LinkScroll>
+            {dogs.length === 0 ? (
+              <></>
+            ) : (
+              <LinkScroll to="dogs">
+                <div className="link">Tillbaka till toppen</div>
+              </LinkScroll>
+            )}
           </Row>
         </Container>
       </div>

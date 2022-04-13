@@ -472,15 +472,16 @@ a {
     color: colors.$primary;
   }
 
-  .pink {
-    color: colors.$pink;
-    border-bottom: 2px solid transparent;
-    font-weight: fonts.$bold;
-    cursor: pointer;
+}
 
-    &:hover {
-      border-bottom: 2px solid colors.$pink;
-    }
+.pink {
+  color: colors.$pink !important;
+  border-bottom: 2px solid transparent !important;
+  font-weight: fonts.$bold !important;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 2px solid colors.$pink !important;
   }
 }
 

@@ -7,8 +7,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "../../components/buttons/button";
 
 // fetch
-const selected_dog_URI = "http://localhost:8080/available-dogs/selected-dog";
-// const selected_dog_URI = 'https://diskrid-server.herokuapp.com/available-dogs/selected-dog';
+// const selected_dog_URI = "http://localhost:8080/available-dogs/selected-dog";
+const selected_dog_URI =
+  "https://hund-soker-hem.herokuapp.com/available-dogs/selected-dog";
 
 function SelectedDog() {
   // scroll to top when routing

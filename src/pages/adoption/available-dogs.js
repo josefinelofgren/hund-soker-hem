@@ -9,8 +9,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "../../components/buttons/button";
 
 // fetch
-const available_dogs_URI = "http://localhost:8080/available-dogs/all-dogs";
-// const available_dogs_URI = 'https://diskrid-server.herokuapp.com/available-dogs/all-dogs';
+// const available_dogs_URI = "http://localhost:8080/available-dogs/all-dogs";
+const available_dogs_URI =
+  "https://hund-soker-hem.herokuapp.com/available-dogs/all-dogs";
 
 function AvailableDogs() {
   const { t } = useTranslation("translation", { keyPrefix: "available-dogs" });
@@ -39,6 +40,15 @@ function AvailableDogs() {
           <p>{t("description")}</p>
           <h5>{t("subtitle-two")}</h5>
           <p>{t("text-two")}</p>
+          <p>
+            Vi har samlat bra och viktig information till dig som funderar på
+            att adoptera,{" "}
+            <Link to="/att-adoptera">
+              <span className="pink">här</span>
+            </Link>
+            . Läs gärna igenom den innan du skickar in en intresseanmälan för en
+            hund.
+          </p>
           <h5>{t("subtitle-one")}</h5>
           <p>{t("text-one")}</p>
           <Button

@@ -11,12 +11,14 @@ import RadioButton from "../../components/forms/radio-button";
 import InputNumber from "../../components/forms/input-number";
 
 // fetch
-const selected_dog_URI = "http://localhost:8080/available-dogs/selected-dog";
-// const selected_dog_URI = 'https://pawpatrol-backend.herokuapp.com/available-dogs/selected-dog';
+// const selected_dog_URI = "http://localhost:8080/available-dogs/selected-dog";
+const selected_dog_URI =
+  "https://hund-soker-hem.herokuapp.com/available-dogs/selected-dog";
 
+// const registration_of_interest_URI =
+//   "http://localhost:8080/registration-of-interest/submit";
 const registration_of_interest_URI =
-  "http://localhost:8080/registration-of-interest/submit";
-// const registration_of_interest_URI= 'https://diskrid-server.herokuapp.com/registration-of-interest/submit';
+  "https://hund-soker-hem.herokuapp.com/registration-of-interest/submit";
 
 function RegistrationOfInterest() {
   const { t } = useTranslation("translation", {
