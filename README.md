@@ -5,7 +5,7 @@ The main purpose of this project is to create a dog rescue website with a soluti
 
 ## Run app live 
 
-Visit: [XXX](XXX)
+Visit: [https://josefinelofgren.github.io/hund-soker-hem](https://josefinelofgren.github.io/hund-soker-hem)
 
 This app is built in React and uses the preprocessor SASS for CSS. The application is deployed at Github Pages. The back end is built in Node.js/Express.js and uses mongoDB Atlas as a database. The back end is hosted at Heroku and you will find the back end application [here](https://github.com/josefinelofgren/hund-soker-hem-backend).
 
