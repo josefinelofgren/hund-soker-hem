@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hund-soker-hem/static/css/main.e0e34a91.css",
-    "main.js": "/hund-soker-hem/static/js/main.d92801b7.js",
+    "main.css": "/hund-soker-hem/static/css/main.c8a67388.css",
+    "main.js": "/hund-soker-hem/static/js/main.36ef9e46.js",
     "static/media/match.img.png": "/hund-soker-hem/static/media/match.img.fab7ccfb6811b57bd699.png",
     "static/media/our-business.png": "/hund-soker-hem/static/media/our-business.eac9366bfb9793b5dfde.png",
     "static/media/about-adoption.png": "/hund-soker-hem/static/media/about-adoption.fc719b617c99a8b993a0.png",
@@ -85,11 +85,11 @@
     "static/media/drop.svg": "/hund-soker-hem/static/media/drop.822c29e6ee11110b19206fb9d967fbd9.svg",
     "static/media/facebook-icon.svg": "/hund-soker-hem/static/media/facebook-icon.1bc123ee44f9f45b5986fc6803ac4c92.svg",
     "static/media/arrow-down.svg": "/hund-soker-hem/static/media/arrow-down.00a0e52701f15b8639fcd62fa7297f29.svg",
-    "main.e0e34a91.css.map": "/hund-soker-hem/static/css/main.e0e34a91.css.map",
-    "main.d92801b7.js.map": "/hund-soker-hem/static/js/main.d92801b7.js.map"
+    "main.c8a67388.css.map": "/hund-soker-hem/static/css/main.c8a67388.css.map",
+    "main.36ef9e46.js.map": "/hund-soker-hem/static/js/main.36ef9e46.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0e34a91.css",
-    "static/js/main.d92801b7.js"
+    "static/css/main.c8a67388.css",
+    "static/js/main.36ef9e46.js"
   ]
 }
