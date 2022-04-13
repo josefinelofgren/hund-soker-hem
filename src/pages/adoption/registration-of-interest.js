@@ -152,7 +152,7 @@ function RegistrationOfInterest() {
                       <h5>{t("subtitle")}</h5>
                       <p>
                         {t("sub-description")}
-                        <Link to="/att-adoptera">
+                        <Link to="/hund-soker-hem/att-adoptera">
                           <span className="pink"> att adoptera</span>
                         </Link>{" "}
                         har vi samlat viktig information till dig som funderar
@@ -200,7 +200,7 @@ function RegistrationOfInterest() {
                 {t("registration-of-interest-info-description", {
                   name: selectedDog.name,
                 })}
-                <Link to="/hitta-min-match">
+                <Link to="/hund-soker-hem/hitta-min-match">
                   <span className="pink"> matchningsformulär</span>
                 </Link>
                 , där vi sedan presenterar de hundar som eventuellt skulle kunna

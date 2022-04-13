@@ -17,7 +17,7 @@ function Header() {
             <h1 className="title">{t("title")}</h1>
             <p>{t("text")}</p>
             <Button
-              path={"/hitta-min-match"}
+              path={"/hund-soker-hem/hitta-min-match"}
               label={t("btn")}
               color={"primary"}
             />

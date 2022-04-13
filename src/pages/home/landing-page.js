@@ -82,7 +82,7 @@ function LandingPage() {
                   label={t("support-us-btn")}
                   size="md"
                   color="secondary"
-                  path="/bli-manadsgivare"
+                  path="/hund-soker-hem/bli-manadsgivare"
                 />
               </Col>
             </Row>
@@ -95,7 +95,7 @@ function LandingPage() {
                   label={t("support-us-btn")}
                   size="md"
                   color="secondary"
-                  path="/bli-manadsgivare"
+                  path="/hund-soker-hem/bli-manadsgivare"
                 />
               </Col>
               <Col md="6">

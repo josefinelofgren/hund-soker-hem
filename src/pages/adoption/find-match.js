@@ -331,7 +331,7 @@ function FindMatch() {
             <Button
               label={"Spara och hitta min match"}
               color={"primary"}
-              path={"matchningar"}
+              path={"/hund-soker-hem/hitta-min-match/matchningar"}
             />
           </div>
         </Container>

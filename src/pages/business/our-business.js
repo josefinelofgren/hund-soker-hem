@@ -58,7 +58,7 @@ function OurBusiness() {
             <Button
               label={t("monthly-donor-btn")}
               color={"primary"}
-              path={"/bli-manadsgivare"}
+              path={"/hund-soker-hem/bli-manadsgivare"}
             />
           </Row>
         </Container>

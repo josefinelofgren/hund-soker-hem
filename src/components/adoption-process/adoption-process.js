@@ -115,7 +115,7 @@ function AdoptionProcess() {
           </div>
         </div>
         <Button
-          path={"/hitta-min-match"}
+          path={"/hund-soker-hem/hitta-min-match"}
           label={t("adoption-process-btn")}
           size="md"
           color="tertiary"

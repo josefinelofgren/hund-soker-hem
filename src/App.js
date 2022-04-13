@@ -30,27 +30,27 @@ function App() {
         <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
         <div className="content-wrap">
           <Routes>
-            <Route exact path="/" element={<LandingPage />}></Route>
-            <Route path="/hitta-min-match" element={<FindMatch />}></Route>
+            <Route exact path="/hund-soker-hem" element={<LandingPage />}></Route>
+            <Route path="/hund-soker-hem/hitta-min-match" element={<FindMatch />}></Route>
             <Route
-              path="/hitta-min-match/matchningar"
+              path="/hund-soker-hem/hitta-min-match/matchningar"
               element={<MatchedDogs />}
             ></Route>
             <Route
-              path="/intresseanmalan/:name"
+              path="/hund-soker-hem/intresseanmalan/:name"
               element={<RegistrationOfInterest />}
             ></Route>
             <Route
-              path="/tillgangliga-hundar"
+              path="/hund-soker-hem/tillgangliga-hundar"
               element={<AvailableDogs />}
             ></Route>
             <Route
-              path="/tillgangliga-hundar/:name"
+              path="/hund-soker-hem/tillgangliga-hundar/:name"
               element={<SelectedDog />}
             ></Route>
-            <Route path="/att-adoptera" element={<AboutAdoption />}></Route>
-            <Route path="/var-verksamhet" element={<OurBusiness />}></Route>
-            <Route path="/bli-manadsgivare" element={<MonthlyDonor />}></Route>
+            <Route path="/hund-soker-hem/att-adoptera" element={<AboutAdoption />}></Route>
+            <Route path="/hund-soker-hem/var-verksamhet" element={<OurBusiness />}></Route>
+            <Route path="/hund-soker-hem/bli-manadsgivare" element={<MonthlyDonor />}></Route>
           </Routes>
         </div>
         <Sponsors />

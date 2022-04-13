@@ -25,7 +25,7 @@ function Nav({ sidebar, setSidebar }) {
     <Navbar>
       <Container fluid>
         <Navbar.Brand>
-          <Link to={"/"}>
+          <Link to={"/hund-soker-hem"}>
             <figure>
               <img
                 src={require("../../assets/svg/logo-pink.svg").default}
@@ -37,7 +37,7 @@ function Nav({ sidebar, setSidebar }) {
         <div className="links">
           {windowDimensions.width >= 1100 && (
             <div className="extra-links">
-              <Link to={"/tillgangliga-hundar"}>
+              <Link to={"/hund-soker-hem/tillgangliga-hundar"}>
                 <li>
                   Hundarna
                   <figure>
@@ -45,7 +45,7 @@ function Nav({ sidebar, setSidebar }) {
                   </figure>
                 </li>
               </Link>
-              <Link to={"/att-adoptera"}>
+              <Link to={"/hund-soker-hem/att-adoptera"}>
                 <li>
                   Att adoptera
                   <figure>
@@ -53,7 +53,7 @@ function Nav({ sidebar, setSidebar }) {
                   </figure>
                 </li>
               </Link>
-              <Link to={"/var-verksamhet"}>
+              <Link to={"/hund-soker-hem/var-verksamhet"}>
                 <li>
                   Vår verksamhet
                   <figure>
@@ -61,7 +61,6 @@ function Nav({ sidebar, setSidebar }) {
                   </figure>
                 </li>
               </Link>
-              {/* <Button label={t('btn')} color='tertiary' size='sm'/>  */}
             </div>
           )}
           <Link

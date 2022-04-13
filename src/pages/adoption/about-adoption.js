@@ -81,12 +81,12 @@ function AboutAdoption() {
               <p>
                 {t("text-four")} Då är du varmt välkommen att göra en{" "}
                 intresseanmälan.
-                <Link to="/hitta-min-match">
+                <Link to="/hund-soker-hem/hitta-min-match">
                   <span className="pink"> Hitta din match här</span>
                 </Link>{" "}
                 via vårt matchningssystem som tar fram de hundar som matchar dig
                 och din livsstil baserat på ett frågeformulär eller sök bland{" "}
-                <Link to="/tillgangliga-hundar">
+                <Link to="/hund-soker-hem/tillgangliga-hundar">
                   <span className="pink">alla våra tillgängliga hundar</span>
                 </Link>
                 .

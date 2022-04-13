@@ -43,7 +43,7 @@ function AvailableDogs() {
           <p>
             Vi har samlat bra och viktig information till dig som funderar på
             att adoptera,{" "}
-            <Link to="/att-adoptera">
+            <Link to="/hund-soker-hem/att-adoptera">
               <span className="pink">här</span>
             </Link>
             . Läs gärna igenom den innan du skickar in en intresseanmälan för en
@@ -54,7 +54,7 @@ function AvailableDogs() {
           <Button
             label={t("find-match")}
             color={"primary"}
-            path={"/hitta-min-match"}
+            path={"/hund-soker-hem/hitta-min-match"}
           />
         </Container>
       </div>
@@ -115,7 +115,7 @@ function Dog({ name, race, path, age, description, sex, city, img }) {
         <h6>
           Om {name}: <span>{description}</span>
         </h6>
-        <Link to={`/tillgangliga-hundar/${path}`}>
+        <Link to={`/hund-soker-hem/tillgangliga-hundar/${path}`}>
           <h6 className="read-more link">Läs mer..</h6>
         </Link>
       </div>

@@ -251,7 +251,7 @@ function SelectedDog() {
                 label={`Jag vill träffa ${selectedDog.name}`}
                 color={"primary"}
                 disabled={true}
-                path={`/intresseanmalan/${path}`}
+                path={`/hund-soker-hem/intresseanmalan/${path}`}
               />
             </Col>
             <Col lg="6">
@@ -278,7 +278,7 @@ function SelectedDog() {
             </Col>
           </Row>
           <Row>
-            <Link to="/tillgangliga-hundar">
+            <Link to="/hund-soker-hem/tillgangliga-hundar">
               <div className="link">Tillbaka</div>
             </Link>
           </Row>

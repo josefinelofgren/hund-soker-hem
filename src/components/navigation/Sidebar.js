@@ -15,30 +15,30 @@ function Sidebar({ sidebar, setSidebar }) {
   const links = [
     {
       label: "Hundarna",
-      path: "/tillgangliga-hundar",
+      path: "/hund-soker-hem/tillgangliga-hundar",
     },
     {
       label: "Att adoptera",
-      path: "/att-adoptera",
+      path: "/hund-soker-hem/att-adoptera",
     },
     {
       label: "Vår verksamhet",
-      path: "/var-verksamhet",
+      path: "/hund-soker-hem/var-verksamhet",
     },
     {
       label: "Bli månadsgivare",
-      path: "/bli-manadsgivare",
+      path: "/hund-soker-hem/bli-manadsgivare",
     },
   ];
 
   const sublinks = [
     {
       label: "Kontakt",
-      path: "/kontakt",
+      path: "/hund-soker-hem/kontakt",
     },
     {
       label: "Integritetspolicy",
-      path: "/integritetspolicy",
+      path: "/hund-soker-hem/integritetspolicy",
     },
   ];
 
