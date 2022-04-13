@@ -1,7 +1,10 @@
-# Paw Patrol
-This app uses mongoDB Atlas as a database. The application is deployed at Github Pages. The back end is deployed at Heroku and you will find the back end application [here](https://github.com/josefinelofgren/pawpatrol-backend).
+# Hund Söker Hem
+This is a degree project for my education as a Front End Developer at Medieinstitutet. This project aims to create a digital and interactive website for the fictional dog rescue company “Hund Söker Hem”, that allows people to easily find their shelter dog match through a matching system. 
+
+The main purpose of this project is to create a dog rescue website with a solution that goes beyond just presenting available dogs. The solution includes encouraging better communication overall and helping people to match them with the right dogs that fits their lifestyle and preferences.
 
 ## Run app live 
+This app is built in React and uses the preprocessor SASS for CSS. The application is deployed at Github Pages. The back end is built in Node.js/Express.js and uses mongoDB Atlas as a database. The back end is hosted at Heroku and you will find the back end application [here](https://github.com/josefinelofgren/pawpatrol-backend).
 
 Visit: [XXX](XXX)
 
@@ -45,10 +48,16 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Dependencies
 
-### Packages
+- react "^17.0.2"
+- sass "^1.49.9"
+- cypress "^9.5.3",
+
+### Other packages
 - create-react-app
 - react-router-dom
 - react-dom
+- react-bootstrap
+- bootstrap
 - sass
 - i18next
 - react-i18next
