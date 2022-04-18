@@ -269,9 +269,38 @@ a {
 
 //monthly donor
 .monthly-donor {
-  text-align: center;
 
-  .donation-form {
+  &.landing-page {
+    text-align: center;
+
+    h6 {
+      margin-bottom: spaces.$sm;
+    }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 48% 4% 48%;
+  }
+
+  .donation-form-content {
+    padding: spaces.$md;
+    border: 3px solid colors.$pink;
+    border-radius: 10px;
+    opacity: 0.5;
+
+    &.is-active {
+      opacity: 1 !important;
+
+      h5 {
+        margin-bottom: spaces.$sm;
+      }
+    }
+
+    &.mb {
+      margin-bottom: spaces.$md;
+    }
+
     h6 {
       text-align: left;
       color: colors.$green;
@@ -279,22 +308,17 @@ a {
 
     h5 {
       text-align: left;
-      margin-bottom: spaces.$sm;
     }
   }
 
   .info {
     text-align: left;
   }
-
-  input {
-    margin: spaces.$extraSm;
-  }
 }
 
 // sponsors
 .sponsors {
-  background-color: colors.$bg-secondary;
+  background-color: colors.$bg-sponsors;
 
   h3 {
     text-align: center;
@@ -471,7 +495,6 @@ a {
     font-weight: fonts.$bold;
     color: colors.$primary;
   }
-
 }
 
 .pink {

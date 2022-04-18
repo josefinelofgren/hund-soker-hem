@@ -108,12 +108,17 @@ function LandingPage() {
           )}
         </Container>
       </div>
-      <div className="monthly-donor">
+      <div className="monthly-donor landing-page">
         <Container fluid>
           <h3>{t("monthly-donor-title")}</h3>
           <p className="text">{t("monthly-donor-text")}</p>
           <h6>{t("monthly-donor-subtitle")}</h6>
           <DonationForm />
+          <input
+            type="submit"
+            value="Vidare till dina uppgifter"
+            className="button no-icon primary"
+          />
         </Container>
       </div>
     </>

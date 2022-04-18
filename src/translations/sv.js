@@ -214,6 +214,8 @@ const translation = {
     "sub-description":
       "Som månadsgivare hos oss på Hund Söker Hem bidrar du till tak över huvudet, foder, veterinärvårdskostnader med mera till våra omplaceringshundar.",
     "monthly-donor-step-one": "Steg 1 av 3",
+    "monthly-donor-step-two": "Steg 2 av 3",
+    "monthly-donor-step-three": "Steg 3 av 3",
     "monthly-donor-subtitle": "Hur mycket vill du ge per månad?",
     "monthly-donor-option-one": "50 kr",
     "monthly-donor-option-two": "100 kr",
@@ -222,10 +224,17 @@ const translation = {
       "... eller ange en valfri summa. Jag vill bidra med",
     "monthly-donor-currency": "kr / månad",
     "monthly-donor-btn": "Bli månadsgivare",
-    "monthly-donor-form-title": "Varje månad vill jag skänka...",
+    "monthly-donor-form-title": "Varje månad vill jag bidra med...",
+    "monthly-donor-form-step-two-title": "Bankuppgifter",
+    "monthly-donor-form-step-two-button": "Vidare till kontaktuppgifter",
+    "monthly-donor-form-step-three-title": "Kontaktuppgifter",
+    "monthly-donor-form-step-three-button": "Bekräfta och bli månadsgivare",
     "heading-one": "Avsluta när du vill",
     "text-one":
       "Vi på Hund Söker Hem är tacksamma för varenda liten krona vi får in. Vi vill att du som månadsprenumerant ska kunna välja att bidra till oss när det passar dig och din ekonomi, därför har vi gjort det lätt för dig att pausa eller avbryta din prenumeration när som helst utan någon bindningstid. ",
+    "registered-title": "Tack, för att du blivit månadsgivare!",
+    "registered-description-part-one": "Du hjälper oss att fortsätta vårt arbete med att se till så att hemlösa hundar får den andra chans de förtjänar.",
+    "registered-description-part-two": "Ett regelbundet stöd från dig hjälper oss i vårt arbete mot att rädda hundar som inte levt under de bästa förhållandena. Dina pengar går oavkortat till att ge hundar tak över huvudet, foder, veterinärvårdskostnader med mera. ",
   },
   sponsors: {
     title: "Sponsorer",

@@ -3,9 +3,8 @@
 @use "./spaces.scss";
 
 form {
-  margin: 0;
-  padding: 0;
-  margin-bottom: spaces.$md !important;
+  margin: 0 !important;
+  padding: 0 !important;
 
   .input-content {
     label {
@@ -14,13 +13,41 @@ form {
       font-size: fonts.$sm;
       max-width: 400px;
       margin-bottom: spaces.$extraSm;
+      display: inline-block;
     }
   }
+}
+
+label.required {
+  font-size: fonts.$required;
+  margin-left: spaces.$mini;
+  color: colors.$pink !important;
+  display: inline-block;
 }
 
 label {
   font-weight: fonts.$bold;
   font-size: fonts.$sm;
+}
+
+select {
+  width: 100%;
+  padding: 0 20px 0 20px;
+  height: 50px;
+  border: 2px solid colors.$silver;
+  border-radius: 10px;
+
+  &:invalid {
+    color: colors.$silver;
+  }
+
+  &:focus {
+    outline-color: colors.$pink;
+  }
+
+  &:required:invalid {
+    color: gray;
+  }
 }
 
 .input {
@@ -87,20 +114,27 @@ label {
   max-width: 600px;
   margin: 0 auto;
 
-  .button {
-    display: block;
-    margin: 0 auto;
+  .left-text {
     margin-top: spaces.$sm;
+    display: block;
+  }
+
+  .right-text {
+    margin-left: spaces.$sm;
   }
 
   .grid-container {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 30% 5% 30% 5% 30% !important;
+  }
+
+  .input-optional {
+    margin-bottom: spaces.$extraSm;
   }
 
   .input-button {
-    width: 90%;
-    max-width: 150px;
+    width: 100%;
+    max-width: 200px;
     background-color: transparent;
     border: 2px solid colors.$silver;
     color: colors.$silver;

@@ -9,6 +9,7 @@ function Input({ value, setState, placeholder, size, label }) {
   return (
     <div className="input-content">
       <label>{label}</label>
+      <label className="required">*</label>
       <input
         placeholder={placeholder}
         value={value}

@@ -14,6 +14,7 @@ function InputNumber({ value, label, placeholder, setState, style }) {
   return (
     <div className="input-content">
       <label>{label}</label>
+      <label className="required">*</label>
       <input
         placeholder={placeholder}
         value={value}
